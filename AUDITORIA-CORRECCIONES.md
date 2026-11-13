@@ -6,6 +6,7 @@ Fecha: 13 de noviembre de 2026
 
 ### Críticos
 
+- Se corrigió la codificación de `index.html`: el texto en español aparecía como `SerigrafÃ­a` en el navegador. El archivo ahora conserva UTF-8 y los acentos se leen correctamente.
 - `index.html` vaciaba el carrito y mostraba el pedido enviado sin esperar el resultado de Supabase. `registro.js` enviaba en segundo plano y los rechazos del servidor podían perderse. Ahora el envío espera confirmación del RPC, muestra el error y conserva el carrito si no hay confirmación.
 - La RPC `registrar_pedido` confiaba en el campo `pagado` recibido desde el navegador y podía guardar el pago como confirmado. Ahora esa señal solo pone el pedido en `pago_verificar`; `pagado` queda en `false` hasta que el equipo lo valide.
 

@@ -1,4 +1,4 @@
-﻿<meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BRAVA Maqueta Web</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -6,9 +6,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Saira+Stencil+One&display=swap">
 <style>
-/* Layout: barra de herramienta (Planos | Maqueta) y un sitio de vistas segÃºn ARQUITECTURA.md.
-   Mundo de taller de serigrafÃ­a: tinta plana, desfase de pantalla en el titular, orden de taller como ticket.
-   Radios: botones en pÃ­ldora, superficies a 14px, controles a 12px. */
+/* Layout: barra de herramienta (Planos | Maqueta) y un sitio de vistas según ARQUITECTURA.md.
+   Mundo de taller de serigrafía: tinta plana, desfase de pantalla en el titular, orden de taller como ticket.
+   Radios: botones en píldora, superficies a 14px, controles a 12px. */
 :root{
   --paper:#F1E9DA; --paper-2:#E7DCC7; --card:#F8F3E9; --stage:#E3D7C1;
   --ink:#1A1917; --ink-2:#433E37; --muted:#625A4E; --line:#D3C5AD;
@@ -65,7 +65,7 @@ a{color:inherit;text-underline-offset:3px}
 .ico{width:18px;height:18px;flex:none}
 [id]{scroll-margin-top:64px}
 
-/* ---------- Departamentos: tarjetas chicas con su tÃ­tulo ---------- */
+/* ---------- Departamentos: tarjetas chicas con su título ---------- */
 .dep-home-grid,.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,160px));gap:20px 16px;justify-content:start}
 .dep-card{display:flex;flex-direction:column;gap:8px;min-width:0}
 .dep-art{display:block;aspect-ratio:1;border-radius:var(--r-surface);overflow:hidden;background:var(--garment);border:1px solid var(--line);transition:transform .2s var(--ease-out),box-shadow .2s var(--ease-out)}
@@ -77,7 +77,7 @@ a{color:inherit;text-underline-offset:3px}
 .dep-art:active{transform:scale(.97);transition-duration:90ms}
 @media (prefers-reduced-motion:reduce){.dep-art,.dep-art:hover{transform:none}}
 
-/* ---------- SVG de prendas y diseÃ±os ---------- */
+/* ---------- SVG de prendas y diseños ---------- */
 .edge{fill:var(--garment);stroke:var(--edge);stroke-width:1.6;stroke-linejoin:round}
 .seam{fill:none;stroke:var(--seam);stroke-width:1.3;stroke-dasharray:3 3}
 .rib{fill:none;stroke:var(--seam);stroke-width:1.2}
@@ -105,7 +105,7 @@ symbol[id^="n-"] .s1{stroke-width:var(--sw,3)}
 #pr-frame.go path{animation:frin 1.1s var(--ease-land) backwards}
 @keyframes frin{0%{opacity:0;transform:translate(calc(var(--fx)*30px),calc(var(--fy)*30px))}42%{opacity:1;transform:none}74%{opacity:1;transform:none}100%{opacity:0;transform:none}}
 
-/* ---------- TÃ­tulos: entrada por palabras ---------- */
+/* ---------- Títulos: entrada por palabras ---------- */
 .tw{display:inline-block;overflow:hidden;vertical-align:top;padding:.04em .1em .14em 0;margin:-.04em -.1em -.14em 0}
 .tw-i{display:inline-block}
 .tw-go{animation:twin .62s var(--ease-land) backwards;animation-delay:calc(70ms + min(var(--i,0),8)*55ms)}
@@ -196,7 +196,7 @@ symbol[id^="n-"] .s1{stroke-width:var(--sw,3)}
 .strip{background:var(--band-ocre);color:#1A1917}
 .strip .wrap{display:flex;gap:10px 34px;flex-wrap:wrap;justify-content:space-between;padding-block:14px;font:900 22px/1 var(--display);font-stretch:62%;text-transform:uppercase}
 
-/* CÃ³mo funciona */
+/* Cómo funciona */
 .how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;list-style:none;padding:0;counter-reset:h}
 .how li{counter-increment:h;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 18px;align-items:start}
 .how li::before{content:counter(h);grid-row:span 2;font:900 88px/.8 var(--display);font-stretch:62%;color:var(--terra)}
@@ -297,7 +297,7 @@ select{appearance:none;padding-right:42px;background:var(--card) url("data:image
 }
 @media (max-width:520px){.opts.g3{gap:6px}.dep-home-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.dep-card h3{font-size:16px}.dep-card .acts{display:grid}.dep-card .btn{white-space:normal;text-align:center;padding:10px 8px;font-size:12px}.o-prenda svg{height:56px}.o-dep small{display:none}}
 
-/* Ficha de diseÃ±o */
+/* Ficha de diseño */
 .ficha{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start;padding-bottom:80px}
 .ficha-art{border-radius:22px;overflow:hidden;background:var(--garment)}
 .ficha-art svg{display:block;width:100%;height:auto;aspect-ratio:1}
@@ -337,7 +337,7 @@ td:first-child{font-weight:600}
 .measure b{font-family:var(--mono);color:var(--ink)}
 @media (max-width:900px){.tallas{grid-template-columns:1fr}}
 
-/* CÃ³mo comprar */
+/* Cómo comprar */
 .band-monte{background:var(--band-monte);color:var(--bone)}
 .band-monte .sec-p{color:var(--bone-dim)}
 .steps4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;padding:0;counter-reset:s}
@@ -444,7 +444,7 @@ td:first-child{font-weight:600}
 .notice{display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:var(--r-control);background:var(--band-ocre);color:#1A1917;font-weight:600;margin-bottom:18px}
 .notice svg{width:22px;height:22px;flex:none;margin-top:1px}
 
-/* ConfirmaciÃ³n */
+/* Confirmación */
 .done-h{padding-block:64px 24px;display:grid;gap:14px;max-width:820px}
 .done-h h1{font:900 clamp(52px,8vw,104px)/.86 var(--display);font-stretch:62%;text-transform:uppercase}
 .done-h .code{font-family:var(--stencil);font-size:clamp(34px,5vw,56px);letter-spacing:.04em;color:var(--terra);line-height:1}
@@ -469,7 +469,7 @@ td:first-child{font-weight:600}
 .legal{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px;font-size:13px;color:var(--bone-dim)}
 @media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
 
-/* Panel de pedido, avisos y botÃ³n flotante */
+/* Panel de pedido, avisos y botón flotante */
 .scrim{position:fixed;inset:0;background:rgba(10,9,8,.5);z-index:40}
 .drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);z-index:41;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;gap:6px;box-shadow:-24px 0 60px rgba(10,9,8,.28);padding:calc(18px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) 20px;overflow-y:auto;animation:slidein .3s var(--ease-drawer)}
 @keyframes slidein{from{transform:translateX(100%)}}
@@ -580,7 +580,7 @@ td:first-child{font-weight:600}
 .wqr{width:96px;height:96px;border:1.5px solid var(--wf-ink);border-radius:6px;background:repeating-conic-gradient(var(--wf-ink) 0 25%,transparent 0 50%) 0 0/16px 16px;opacity:.6}
 </style>
 
-<!-- ===== SÃ­mbolos SVG compartidos ===== -->
+<!-- ===== Símbolos SVG compartidos ===== -->
 <svg class="svgdefs" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="shadeV" x1="0" x2="1" y1="0" y2="0">
@@ -591,7 +591,7 @@ td:first-child{font-weight:600}
     </linearGradient>
   </defs>
 
-  <!-- Ãconos: trazo Ãºnico de 1.75 -->
+  <!-- Íconos: trazo único de 1.75 -->
   <symbol id="i-x" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
   <symbol id="i-back" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></g></symbol>
@@ -1060,7 +1060,7 @@ td:first-child{font-weight:600}
 <circle class="i2" cx="275" cy="261" r="3" />
 
 <text class="pt i1" x="200" y="48" text-anchor="middle" font-size="19" textLength="92" lengthAdjust="spacingAndGlyphs">DIABLADA</text>
-<text class="pt i1" x="202" y="290" text-anchor="middle" font-size="17" textLength="112" lengthAdjust="spacingAndGlyphs">SOCAVÃ“N</text>
+<text class="pt i1" x="202" y="290" text-anchor="middle" font-size="17" textLength="112" lengthAdjust="spacingAndGlyphs">SOCAVÓN</text>
 <text class="pm i1" x="200" y="338" text-anchor="middle" font-size="12" textLength="147" lengthAdjust="spacingAndGlyphs">CAPITAL DEL FOLKLORE</text>
 <text class="pm i1" x="200" y="375" text-anchor="middle" font-size="14" textLength="49" lengthAdjust="spacingAndGlyphs">BRAVA</text>
 </symbol>
@@ -1113,7 +1113,7 @@ td:first-child{font-weight:600}
 
 <text class="pt i1" x="200" y="72" text-anchor="middle" font-size="19" textLength="104" lengthAdjust="spacingAndGlyphs">CERRO RICO</text>
 <text class="pt i1" x="322" y="307" text-anchor="middle" font-size="17" textLength="58" lengthAdjust="spacingAndGlyphs">UYUNI</text>
-<text class="pm i1" x="200" y="340" text-anchor="middle" font-size="12" textLength="107" lengthAdjust="spacingAndGlyphs">VALE UN POTOSÃ</text>
+<text class="pm i1" x="200" y="340" text-anchor="middle" font-size="12" textLength="107" lengthAdjust="spacingAndGlyphs">VALE UN POTOSÍ</text>
 <text class="pm i1" x="200" y="375" text-anchor="middle" font-size="14" textLength="49" lengthAdjust="spacingAndGlyphs">BRAVA</text>
 </symbol>
 <symbol id="c-potosi" viewBox="0 0 200 120">
@@ -1123,7 +1123,7 @@ td:first-child{font-weight:600}
 <path class="i2" d="M82 54h9v8h-9Zm23-9h9v8h-9Z" />
 <path class="i2" d="M100 7l4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z" />
 <path class="s2" d="M20 105h37m86 0h37" />
-<text class="pt i1" x="100" y="96" text-anchor="middle" font-size="30" textLength="174" lengthAdjust="spacingAndGlyphs">POTOSÃ</text>
+<text class="pt i1" x="100" y="96" text-anchor="middle" font-size="30" textLength="174" lengthAdjust="spacingAndGlyphs">POTOSÍ</text>
 </symbol>
 <symbol id="d-chuquisaca" viewBox="0 0 400 400">
 <g class="s1" stroke-dasharray="2 8"><path d="M30 119Q66 91 98 111T131 96M274 104Q322 86 370 120M30 282Q64 254 100 273M304 276Q347 253 370 285" /></g>
@@ -1280,7 +1280,7 @@ td:first-child{font-weight:600}
  
 <g transform="translate(277 285)"><path class="i1" d="M0 44l39-27 39 27v39H0z" /><path class="i2" d="M34 33V9h10v26z" /><path class="s1" d="M39 10V0m-26 48h15v18H13zm36 0h14v18H49zM7 84h68M8 43l31-22 32 22" /><path class="i1" d="M91 18h7v64h-7z" /><path class="i2" d="M94 19Q73 4 68 12q13 2 25 12Q72 15 63 24q16 0 31 4Q78 35 80 43q8-6 14-14 5 17 13 19-1-14-8-25 14 13 23 10-9-13-26-15 14-8 23-7-17-7-25 8z" /><path class="s1" d="M95 22L68 12m27 15-31-3m31 8L80 43m16-19 22-11" /></g>
  
-<g><path class="i1" d="M130 361l-13-12 13-8h140l13 8-13 12z" /><text class="pt i1" x="200" y="360" text-anchor="middle" font-size="17" textLength="92" lengthAdjust="spacingAndGlyphs">BRAVA</text><text class="pt i1" x="205" y="119" text-anchor="middle" font-size="21" textLength="82" lengthAdjust="spacingAndGlyphs">PANDO</text><text class="pm i2" x="198" y="160" text-anchor="middle" font-size="12" textLength="64" lengthAdjust="spacingAndGlyphs">CASTAÃ‘A</text><text class="pt i1" x="199" y="273" text-anchor="middle" font-size="16" textLength="91" lengthAdjust="spacingAndGlyphs">AMAZONIA</text><text class="pm i2" x="201" y="387" text-anchor="middle" font-size="12" textLength="66" lengthAdjust="spacingAndGlyphs">SIRINGA</text><text class="pm i2" x="196" y="218" text-anchor="middle" font-size="12" textLength="52" lengthAdjust="spacingAndGlyphs">COBIJA</text><path class="i2" d="M107 139l4 9 9 3-9 4-4 9-4-9-9-4 9-3zm182-5 3 7 7 3-7 3-3 7-3-7-7-3 7-3zM110 246l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" /><circle class="i2" cx="109" cy="194" r="3" /><circle class="i1" cx="276" cy="140" r="3" /><circle class="i2" cx="272" cy="321" r="3" /></g>
+<g><path class="i1" d="M130 361l-13-12 13-8h140l13 8-13 12z" /><text class="pt i1" x="200" y="360" text-anchor="middle" font-size="17" textLength="92" lengthAdjust="spacingAndGlyphs">BRAVA</text><text class="pt i1" x="205" y="119" text-anchor="middle" font-size="21" textLength="82" lengthAdjust="spacingAndGlyphs">PANDO</text><text class="pm i2" x="198" y="160" text-anchor="middle" font-size="12" textLength="64" lengthAdjust="spacingAndGlyphs">CASTAÑA</text><text class="pt i1" x="199" y="273" text-anchor="middle" font-size="16" textLength="91" lengthAdjust="spacingAndGlyphs">AMAZONIA</text><text class="pm i2" x="201" y="387" text-anchor="middle" font-size="12" textLength="66" lengthAdjust="spacingAndGlyphs">SIRINGA</text><text class="pm i2" x="196" y="218" text-anchor="middle" font-size="12" textLength="52" lengthAdjust="spacingAndGlyphs">COBIJA</text><path class="i2" d="M107 139l4 9 9 3-9 4-4 9-4-9-9-4 9-3zm182-5 3 7 7 3-7 3-3 7-3-7-7-3 7-3zM110 246l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" /><circle class="i2" cx="109" cy="194" r="3" /><circle class="i1" cx="276" cy="140" r="3" /><circle class="i2" cx="272" cy="321" r="3" /></g>
  
 <g transform="translate(296 101)"><path class="i2" d="M20 3q6 12 14 0 0 14 13 11-7 11 6 17-14 3-7 16-12-7-18 7-6-14-18-7 7-13-7-16 13-5 7-16Q23 16 20 3z" /><circle class="i1" cx="29" cy="33" r="7" /><path class="s1" d="M29 40v25q-11 8-20 1m20-11q10-11 19-4" /><path class="sg" d="M29 27v-8m-6 14-8-4m20 4 8-4" /></g>
 
@@ -1301,7 +1301,7 @@ td:first-child{font-weight:600}
     <circle class="s1" cx="60" cy="60" r="57" stroke-width="2.6"/>
     <circle class="s1" cx="60" cy="60" r="41" stroke-width="1.4"/>
     <path id="stamp-arc" d="M60,60 m-49,0 a49,49 0 1,1 98,0 a49,49 0 1,1 -98,0" fill="none"/>
-    <text class="stamp-t i1"><textPath href="#stamp-arc" textLength="300">COCHABAMBA Â· BOLIVIA Â· TU TIERRA, TU ESTILO Â·</textPath></text>
+    <text class="stamp-t i1"><textPath href="#stamp-arc" textLength="300">COCHABAMBA · BOLIVIA · TU TIERRA, TU ESTILO ·</textPath></text>
     <circle class="i2" cx="76" cy="40" r="6"/>
     <path class="i1" d="M32,74 L50,50 L58,60 L68,42 L88,74 Z"/>
     <path class="g" d="M68,42 L63.5,50 L68,47.5 L72,51 L73.5,49.5 Z"/>
@@ -1324,21 +1324,21 @@ td:first-child{font-weight:600}
 
 <!-- =================================================== MAQUETA -->
 <main id="v-maqueta">
-  <div class="announce"><div class="wrap"><span>SerigrafÃ­a por pedido, hecha en Cochabamba</span><span>PagÃ¡s con QR y coordinamos por WhatsApp</span></div></div>
+  <div class="announce"><div class="wrap"><span>Serigrafía por pedido, hecha en Cochabamba</span><span>Pagás con QR y coordinamos por WhatsApp</span></div></div>
 
   <div class="sitenav-band">
     <nav class="sitenav wrap" aria-label="Principal">
       <a class="wordmark" href="#inicio" aria-label="BRAVA, inicio">BRAVA</a>
       <div class="navlinks" id="navlinks" data-open="false">
-        <a href="#personaliza" data-nav="personaliza">PersonalizÃ¡ tu prenda</a>
+        <a href="#personaliza" data-nav="personaliza">Personalizá tu prenda</a>
         <a href="#departamentos" data-nav="departamentos">Departamentos</a>
         <a href="#poleras" data-nav="poleras">Poleras</a>
-        <a href="#guia-de-tallas" data-nav="guia-de-tallas">GuÃ­a de tallas</a>
-        <a href="#como-comprar" data-nav="como-comprar">CÃ³mo comprar</a>
+        <a href="#guia-de-tallas" data-nav="guia-de-tallas">Guía de tallas</a>
+        <a href="#como-comprar" data-nav="como-comprar">Cómo comprar</a>
         <a href="#contacto" data-nav="contacto">Contacto</a>
       </div>
       <div class="navend">
-        <button class="menubtn" type="button" id="menubtn" aria-expanded="false" aria-controls="navlinks"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>MenÃº</button>
+        <button class="menubtn" type="button" id="menubtn" aria-expanded="false" aria-controls="navlinks"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>Menú</button>
         <button class="cartbtn" type="button" data-open-cart>Pedido <b id="cart-count">0</b></button>
       </div>
     </nav>
@@ -1350,20 +1350,20 @@ td:first-child{font-weight:600}
       <div class="wrap hero-grid">
         <div>
           <h1 class="hero-t"><span>Tu tierra.</span><span class="l2">Tu estilo.</span></h1>
-          <p class="hero-lead">ElegÃ­ canguro, polera o gorra y estampale un diseÃ±o inspirado en Bolivia. Lo serigrafiamos en Cochabamba.</p>
+          <p class="hero-lead">Elegí canguro, polera o gorra y estampale un diseño inspirado en Bolivia. Lo serigrafiamos en Cochabamba.</p>
           <div class="hero-cta">
-            <a class="btn btn-ocre" href="#personaliza">PersonalizÃ¡ tu prenda</a>
+            <a class="btn btn-ocre" href="#personaliza">Personalizá tu prenda</a>
             <a class="btn btn-bone" href="#departamentos">Ver departamentos</a>
           </div>
         </div>
         <figure class="hero-art">
-          <svg viewBox="0 0 400 440" role="img" aria-label="Canguro blanco, vista de espalda, diseÃ±o de Cochabamba" style="--garment:#F4F2EC;--ink1:#1A1917;--ink2:#C65A34"><image href="prendas/canguro-espalda-blanco.webp" width="400" height="440"/><use href="#a-cochabamba" x="128" y="150" width="144" height="144"/></svg>
-          <figcaption><span>Canguro blanco, diseÃ±o de Cochabamba</span><span class="num">30 Ã— 30 cm</span></figcaption>
+          <svg viewBox="0 0 400 440" role="img" aria-label="Canguro blanco, vista de espalda, diseño de Cochabamba" style="--garment:#F4F2EC;--ink1:#1A1917;--ink2:#C65A34"><image href="prendas/canguro-espalda-blanco.webp" width="400" height="440"/><use href="#a-cochabamba" x="128" y="150" width="144" height="144"/></svg>
+          <figcaption><span>Canguro blanco, diseño de Cochabamba</span><span class="num">30 × 30 cm</span></figcaption>
         </figure>
       </div>
     </section>
 
-    <div class="strip"><div class="wrap"><span>Cochabamba</span><span>La Paz</span><span>Santa Cruz</span><span>Oruro</span><span>PotosÃ­</span><span>Chuquisaca</span><span>Tarija</span><span>Beni</span><span>Pando</span></div></div><section class="sec wrap"><h2 class="sec-t">AsÃ­ funciona</h2><ol class="how"><li><h3>ElegÃ­ la prenda</h3><p>Canguro, polera o gorra, con su color y su talla.</p></li><li><h3>ElegÃ­ tu departamento</h3><p>ElegÃ­ tu departamento. Cada uno trae su propio cuadrado de dibujos y se estampa solo.</p></li><li><h3>Recibilo en Cocha</h3><p>PagÃ¡s con QR, nos mandÃ¡s el pedido por WhatsApp y lo recogÃ©s o te lo llevamos.</p></li></ol></section><section class="sec dep-home" id="departamentos"><div class="wrap"><h2 class="sec-t">ElegÃ­ tu departamento</h2><div class="dep-home-grid" id="home-deps"></div></div></section>
+    <div class="strip"><div class="wrap"><span>Cochabamba</span><span>La Paz</span><span>Santa Cruz</span><span>Oruro</span><span>Potosí</span><span>Chuquisaca</span><span>Tarija</span><span>Beni</span><span>Pando</span></div></div><section class="sec wrap"><h2 class="sec-t">Así funciona</h2><ol class="how"><li><h3>Elegí la prenda</h3><p>Canguro, polera o gorra, con su color y su talla.</p></li><li><h3>Elegí tu departamento</h3><p>Elegí tu departamento. Cada uno trae su propio cuadrado de dibujos y se estampa solo.</p></li><li><h3>Recibilo en Cocha</h3><p>Pagás con QR, nos mandás el pedido por WhatsApp y lo recogés o te lo llevamos.</p></li></ol></section><section class="sec dep-home" id="departamentos"><div class="wrap"><h2 class="sec-t">Elegí tu departamento</h2><div class="dep-home-grid" id="home-deps"></div></div></section>
 
     <div class="trust">
       <div class="wrap">
@@ -1378,8 +1378,8 @@ td:first-child{font-weight:600}
   <div class="view" data-route="personaliza" hidden>
     <div class="wrap">
       <header class="page-h">
-        <h1>PersonalizÃ¡ tu prenda</h1>
-        <p>Cada elecciÃ³n se ve en la prenda al momento. Abajo queda la orden de taller con lo que vamos a imprimir.</p>
+        <h1>Personalizá tu prenda</h1>
+        <p>Cada elección se ve en la prenda al momento. Abajo queda la orden de taller con lo que vamos a imprimir.</p>
       </header>
       <div class="cz">
         <div class="cz-stage">
@@ -1411,7 +1411,7 @@ td:first-child{font-weight:600}
             <div class="opts" id="o-color"></div>
           </fieldset>
           <fieldset class="step">
-            <legend><span class="step-h"><span class="n">3</span><span class="t">Talla</span><span class="v"><a class="hint" href="#guia-de-tallas">GuÃ­a de tallas</a></span></span></legend>
+            <legend><span class="step-h"><span class="n">3</span><span class="t">Talla</span><span class="v"><a class="hint" href="#guia-de-tallas">Guía de tallas</a></span></span></legend>
             <div class="opts" id="o-talla"></div>
           </fieldset>
           <fieldset class="step">
@@ -1420,7 +1420,7 @@ td:first-child{font-weight:600}
             <div id="dep2-box" hidden style="margin-top:14px"><div class="hint" style="margin-bottom:8px">Departamento del nombre:</div><div class="opts g3 dep-options" id="o-dep2"></div></div>
           </fieldset>
           <fieldset class="step">
-            <legend><span class="step-h"><span class="n">5</span><span class="t">UbicaciÃ³n</span><span class="v" id="v-ub"></span></span></legend>
+            <legend><span class="step-h"><span class="n">5</span><span class="t">Ubicación</span><span class="v" id="v-ub"></span></span></legend>
             <div class="opts" id="o-ub"></div>
             <p class="hint" id="ub-hint" hidden style="margin-top:10px">La gorra solo se estampa al frente.</p>
           </fieldset>
@@ -1434,11 +1434,11 @@ td:first-child{font-weight:600}
             <dl class="tk-dl">
               <dt>Prenda</dt><dd id="tk-prenda"></dd>
               <dt id="tk-dep-l">Departamento</dt><dd id="tk-dep"></dd>
-              <dt>PosiciÃ³n</dt><dd id="tk-pos"></dd>
+              <dt>Posición</dt><dd id="tk-pos"></dd>
               <dt>Medida</dt><dd class="num" id="tk-med"></dd>
               <dt>Tintas</dt><dd id="tk-tin"></dd>
-              <dt>TÃ©cnica</dt><dd id="tk-tec"></dd>
-              <dt>ElaboraciÃ³n</dt><dd>5 a 7 dÃ­as hÃ¡biles <span class="ex">(ejemplo)</span></dd>
+              <dt>Técnica</dt><dd id="tk-tec"></dd>
+              <dt>Elaboración</dt><dd>5 a 7 días hábiles <span class="ex">(ejemplo)</span></dd>
             </dl>
             <div class="tk-sum" id="tk-sum"></div>
             <div class="tk-total"><span class="caps">Total</span><strong id="tk-total">Bs 0</strong></div>
@@ -1450,12 +1450,12 @@ td:first-child{font-weight:600}
     </div>
   </div>
 
-  <!-- Departamentos --><div class="view" data-route="departamentos" hidden><div class="wrap"><header class="page-h"><h1>Departamentos</h1></header><div class="dgrid" id="dgrid"></div><div style="height:80px"></div></div></div><div class="view" data-route="departamento" hidden><div class="wrap" id="ficha"></div></div><!-- Poleras: catÃ¡logo propio --><div class="view" data-route="poleras" hidden><div class="wrap"><header class="page-h"><h1>Poleras</h1><p>DiseÃ±os a todo color pensados solo para poleras. Cada polera lleva Â«BRAVAÂ» al frente y el diseÃ±o que elijas en la espalda.</p></header><div class="dgrid" id="pgrid"></div><div style="height:80px"></div></div></div><!-- ===== P-05 GuÃ­a de tallas ===== -->
+  <!-- Departamentos --><div class="view" data-route="departamentos" hidden><div class="wrap"><header class="page-h"><h1>Departamentos</h1></header><div class="dgrid" id="dgrid"></div><div style="height:80px"></div></div></div><div class="view" data-route="departamento" hidden><div class="wrap" id="ficha"></div></div><!-- Poleras: catálogo propio --><div class="view" data-route="poleras" hidden><div class="wrap"><header class="page-h"><h1>Poleras</h1><p>Diseños a todo color pensados solo para poleras. Cada polera lleva «BRAVA» al frente y el diseño que elijas en la espalda.</p></header><div class="dgrid" id="pgrid"></div><div style="height:80px"></div></div></div><!-- ===== P-05 Guía de tallas ===== -->
   <div class="view" data-route="guia-de-tallas" hidden>
     <div class="wrap">
       <header class="page-h">
-        <h1>GuÃ­a de tallas</h1>
-        <p>PonÃ© una prenda tuya que te quede bien sobre la mesa y comparala con la tabla. Las medidas son de la prenda, no del cuerpo.</p>
+        <h1>Guía de tallas</h1>
+        <p>Poné una prenda tuya que te quede bien sobre la mesa y comparala con la tabla. Las medidas son de la prenda, no del cuerpo.</p>
       </header>
       <div class="tallas">
         <div>
@@ -1466,7 +1466,7 @@ td:first-child{font-weight:600}
           </div>
           <div role="tabpanel" id="tp-canguro" aria-labelledby="tt-canguro" class="tablebox">
             <table>
-              <thead><tr><th>Talla</th><th>A Â· Ancho</th><th>L Â· Largo</th><th>Manga</th></tr></thead>
+              <thead><tr><th>Talla</th><th>A · Ancho</th><th>L · Largo</th><th>Manga</th></tr></thead>
               <tbody>
                 <tr><td>S</td><td>54 cm</td><td>68 cm</td><td>60 cm</td></tr>
                 <tr><td>M</td><td>57 cm</td><td>71 cm</td><td>62 cm</td></tr>
@@ -1477,7 +1477,7 @@ td:first-child{font-weight:600}
           </div>
           <div role="tabpanel" id="tp-polera" aria-labelledby="tt-polera" class="tablebox" hidden>
             <table>
-              <thead><tr><th>Talla</th><th>A Â· Ancho</th><th>L Â· Largo</th><th>Manga</th></tr></thead>
+              <thead><tr><th>Talla</th><th>A · Ancho</th><th>L · Largo</th><th>Manga</th></tr></thead>
               <tbody>
                 <tr><td>S</td><td>49 cm</td><td>69 cm</td><td>19 cm</td></tr>
                 <tr><td>M</td><td>52 cm</td><td>72 cm</td><td>20 cm</td></tr>
@@ -1487,9 +1487,9 @@ td:first-child{font-weight:600}
             </table>
           </div>
           <div role="tabpanel" id="tp-gorra" aria-labelledby="tt-gorra" class="capbox" hidden>
-            <strong>Talla Ãºnica</strong>
-            <p>Cierre regulable atrÃ¡s. Se ajusta a un contorno de cabeza de <span class="num">54 a 60 cm</span>.</p>
-            <p class="hint">MedÃ­ con una cinta mÃ©trica alrededor de la frente, un dedo por encima de las orejas.</p>
+            <strong>Talla única</strong>
+            <p>Cierre regulable atrás. Se ajusta a un contorno de cabeza de <span class="num">54 a 60 cm</span>.</p>
+            <p class="hint">Medí con una cinta métrica alrededor de la frente, un dedo por encima de las orejas.</p>
           </div>
           <p class="hint" style="margin-top:14px">Medidas de ejemplo hasta confirmarlas con el proveedor de prendas.</p>
         </div>
@@ -1503,28 +1503,28 @@ td:first-child{font-weight:600}
           </svg>
           <ul>
             <li><b>A</b> De costura a costura, 2 cm debajo de la sisa.</li>
-            <li><b>L</b> Desde el punto mÃ¡s alto del hombro hasta el borde inferior.</li>
+            <li><b>L</b> Desde el punto más alto del hombro hasta el borde inferior.</li>
           </ul>
         </figure>
       </div>
     </div>
   </div>
 
-  <!-- ===== P-06 CÃ³mo comprar ===== -->
+  <!-- ===== P-06 Cómo comprar ===== -->
   <div class="view" data-route="como-comprar" hidden>
     <div class="wrap">
       <header class="page-h">
-        <h1>CÃ³mo comprar</h1>
-        <p>ArmÃ¡s el pedido en la web, pagÃ¡s con QR y nos lo mandÃ¡s por WhatsApp con el comprobante. Sin cuentas ni contraseÃ±as.</p>
+        <h1>Cómo comprar</h1>
+        <p>Armás el pedido en la web, pagás con QR y nos lo mandás por WhatsApp con el comprobante. Sin cuentas ni contraseñas.</p>
       </header>
     </div>
     <section class="sec band-monte" style="padding-block:56px">
       <div class="wrap">
         <ol class="steps4">
-          <li><h3>ArmÃ¡</h3><p>Prenda, color, talla, diseÃ±o y dÃ³nde va el estampado.</p></li>
-          <li><h3>RevisÃ¡</h3><p>Ves cada prenda con su precio y elegÃ­s recojo o delivery.</p></li>
-          <li><h3>PagÃ¡ con QR</h3><p>Con la app de tu banco, por el monto exacto que te mostramos.</p></li>
-          <li><h3>EnviÃ¡ por WhatsApp</h3><p>El mensaje sale escrito con todo el pedido. Vos adjuntÃ¡s el comprobante.</p></li>
+          <li><h3>Armá</h3><p>Prenda, color, talla, diseño y dónde va el estampado.</p></li>
+          <li><h3>Revisá</h3><p>Ves cada prenda con su precio y elegís recojo o delivery.</p></li>
+          <li><h3>Pagá con QR</h3><p>Con la app de tu banco, por el monto exacto que te mostramos.</p></li>
+          <li><h3>Enviá por WhatsApp</h3><p>El mensaje sale escrito con todo el pedido. Vos adjuntás el comprobante.</p></li>
         </ol>
       </div>
     </section>
@@ -1532,18 +1532,18 @@ td:first-child{font-weight:600}
       <div class="qrhow">
         <div>
           <h2 class="sec-t">Pagar con QR desde el mismo celular</h2>
-          <p class="sec-p" style="margin-bottom:24px">Tu celular no puede escanear su propia pantalla, asÃ­ que el QR se guarda como imagen.</p>
+          <p class="sec-p" style="margin-bottom:24px">Tu celular no puede escanear su propia pantalla, así que el QR se guarda como imagen.</p>
           <ol>
-            <li><div><b>TocÃ¡ Â«Guardar QRÂ»</b><span>La imagen queda en tu galerÃ­a.</span></div></li>
-            <li><div><b>AbrÃ­ la app de tu banco</b><span>EntrÃ¡ a Pagar con QR y elegÃ­ la imagen desde la galerÃ­a.</span></div></li>
-            <li><div><b>EscribÃ­ el monto y el cÃ³digo</b><span>El monto exacto y el cÃ³digo del pedido en la glosa o referencia.</span></div></li>
+            <li><div><b>Tocá «Guardar QR»</b><span>La imagen queda en tu galería.</span></div></li>
+            <li><div><b>Abrí la app de tu banco</b><span>Entrá a Pagar con QR y elegí la imagen desde la galería.</span></div></li>
+            <li><div><b>Escribí el monto y el código</b><span>El monto exacto y el código del pedido en la glosa o referencia.</span></div></li>
           </ol>
         </div>
         <div>
           <div class="phones" aria-hidden="true">
             <div class="phone qr"><svg viewBox="0 0 24 24"><use href="#i-qr"/></svg>Guardar QR</div>
             <div class="phone"><svg viewBox="0 0 24 24"><use href="#i-bank"/></svg>App del banco</div>
-            <div class="phone"><svg viewBox="0 0 24 24"><use href="#i-image"/></svg>ElegÃ­ la imagen</div>
+            <div class="phone"><svg viewBox="0 0 24 24"><use href="#i-image"/></svg>Elegí la imagen</div>
           </div>
           <button class="btn btn-ink" type="button" data-qr-demo style="margin-top:20px">Ver el QR de ejemplo</button>
         </div>
@@ -1551,19 +1551,19 @@ td:first-child{font-weight:600}
     </section>
     <section class="wrap">
       <div class="facts">
-        <div><h3>ElaboraciÃ³n</h3><p>5 a 7 dÃ­as hÃ¡biles desde que confirmamos tu pago. Plazo de ejemplo.</p></div>
+        <div><h3>Elaboración</h3><p>5 a 7 días hábiles desde que confirmamos tu pago. Plazo de ejemplo.</p></div>
         <div><h3>Entregas</h3><p>Recojo sin costo en el taller. Delivery en la ciudad desde Bs 15, precio de ejemplo.</p></div>
-        <div><h3>Cuidado del estampado</h3><p>LavÃ¡ la prenda al revÃ©s con agua frÃ­a y no planches encima del diseÃ±o.</p></div>
+        <div><h3>Cuidado del estampado</h3><p>Lavá la prenda al revés con agua fría y no planches encima del diseño.</p></div>
       </div>
     </section>
     <section class="sec wrap">
       <h2 class="sec-t">Preguntas frecuentes</h2>
       <div class="faq">
-        <details><summary>Â¿CÃ³mo sÃ© que recibieron mi pago?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Te respondemos por WhatsApp con el cÃ³digo de tu pedido y la fecha en que va a estar listo.</p></details>
-        <details><summary>Â¿Puedo subir mi propio diseÃ±o?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>TodavÃ­a no desde la web. Para un diseÃ±o propio o un pedido grupal, escribinos desde Contacto y lo cotizamos.</p></details>
-        <details><summary>Â¿QuÃ© pasa si me equivoco de talla?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Cada prenda se estampa por pedido, por eso conviene revisar la guÃ­a de tallas antes de pagar. Los cambios se coordinan por WhatsApp; la polÃ­tica estÃ¡ por definir.</p></details>
-        <details><summary>Â¿Hacen envÃ­os fuera de Cochabamba?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Por ahora solo entregamos en la ciudad. Si estÃ¡s en otro departamento, consultanos por WhatsApp.</p></details>
-        <details><summary>Â¿QuÃ© pasa si paguÃ© un monto distinto?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Lo vemos con el comprobante: te pedimos la diferencia o te devolvemos lo que sobre antes de producir.</p></details>
+        <details><summary>¿Cómo sé que recibieron mi pago?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Te respondemos por WhatsApp con el código de tu pedido y la fecha en que va a estar listo.</p></details>
+        <details><summary>¿Puedo subir mi propio diseño?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Todavía no desde la web. Para un diseño propio o un pedido grupal, escribinos desde Contacto y lo cotizamos.</p></details>
+        <details><summary>¿Qué pasa si me equivoco de talla?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Cada prenda se estampa por pedido, por eso conviene revisar la guía de tallas antes de pagar. Los cambios se coordinan por WhatsApp; la política está por definir.</p></details>
+        <details><summary>¿Hacen envíos fuera de Cochabamba?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Por ahora solo entregamos en la ciudad. Si estás en otro departamento, consultanos por WhatsApp.</p></details>
+        <details><summary>¿Qué pasa si pagué un monto distinto?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Lo vemos con el comprobante: te pedimos la diferencia o te devolvemos lo que sobre antes de producir.</p></details>
       </div>
     </section>
   </div>
@@ -1573,21 +1573,21 @@ td:first-child{font-weight:600}
     <div class="wrap">
       <header class="page-h">
         <h1>Contacto</h1>
-        <p>Para pedidos grupales, promociones o algo que no estÃ¡ en el catÃ¡logo.</p>
+        <p>Para pedidos grupales, promociones o algo que no está en el catálogo.</p>
       </header>
       <div class="contacto">
         <dl class="cinfo">
           <div><dt>WhatsApp</dt><dd>Gabriela, Asesora de Ventas<br><a class="num" href="https://wa.me/59164949259" target="_blank" rel="noopener">+591 6494 9259</a></dd></div>
           <div><dt>Instagram y TikTok</dt><dd>@brava <span class="ex">(cuentas por crear)</span></dd></div>
-          <div><dt>Taller</dt><dd>Cochabamba, lunes a sÃ¡bado</dd></div>
+          <div><dt>Taller</dt><dd>Cochabamba, lunes a sábado</dd></div>
         </dl>
         <form class="form" id="cform" novalidate>
           <div class="field"><label for="c-nombre">Nombre</label><input id="c-nombre" type="text" autocomplete="name" placeholder="Por ejemplo, Daniela Quiroga"><span class="err" id="c-nombre-err" hidden></span></div>
-          <div class="field"><label for="c-msg">QuÃ© necesitÃ¡s</label><textarea id="c-msg" placeholder="Por ejemplo, poleras para la promo del curso con el escudo del colegio"></textarea><span class="err" id="c-msg-err" hidden></span></div>
+          <div class="field"><label for="c-msg">Qué necesitás</label><textarea id="c-msg" placeholder="Por ejemplo, poleras para la promo del curso con el escudo del colegio"></textarea><span class="err" id="c-msg-err" hidden></span></div>
           <div class="field"><label for="c-cant">Cantidad aproximada</label><input id="c-cant" type="text" inputmode="numeric" placeholder="Por ejemplo, 25"></div>
           <button class="btn btn-ink" type="submit" style="justify-self:start"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Escribir por WhatsApp</button>
           <div id="c-out" hidden>
-            <p class="hint" style="margin-bottom:8px">Este es el mensaje que se abrirÃ­a en WhatsApp. En el prototipo no se envÃ­a nada.</p>
+            <p class="hint" style="margin-bottom:8px">Este es el mensaje que se abriría en WhatsApp. En el prototipo no se envía nada.</p>
             <pre class="preview" id="c-msg-out"></pre>
           </div>
         </form>
@@ -1603,7 +1603,7 @@ td:first-child{font-weight:600}
     </div>
   </div>
 
-  <!-- ===== P-09 ConfirmaciÃ³n ===== -->
+  <!-- ===== P-09 Confirmación ===== -->
   <div class="view" data-route="enviado" hidden>
     <div class="wrap" id="enviado-root"></div>
   </div>
@@ -1612,12 +1612,12 @@ td:first-child{font-weight:600}
   <footer class="foot">
     <div class="wrap">
       <div class="foot-grid">
-        <div><h4>Tienda</h4><ul><li><a href="#personaliza">PersonalizÃ¡ tu prenda</a></li><li><a href="#departamentos">Departamentos</a></li><li><a href="#poleras">Poleras</a></li><li><a href="#guia-de-tallas">GuÃ­a de tallas</a></li></ul></div>
-        <div><h4>Ayuda</h4><ul><li><a href="#como-comprar">CÃ³mo comprar</a></li><li><a href="#contacto">Contacto</a></li><li><a href="#pedido">Tu pedido</a></li></ul></div>
+        <div><h4>Tienda</h4><ul><li><a href="#personaliza">Personalizá tu prenda</a></li><li><a href="#departamentos">Departamentos</a></li><li><a href="#poleras">Poleras</a></li><li><a href="#guia-de-tallas">Guía de tallas</a></li></ul></div>
+        <div><h4>Ayuda</h4><ul><li><a href="#como-comprar">Cómo comprar</a></li><li><a href="#contacto">Contacto</a></li><li><a href="#pedido">Tu pedido</a></li></ul></div>
         <div><h4>Taller</h4><ul><li>Gabriela, Asesora de Ventas</li><li><a class="num" href="https://wa.me/59164949259" target="_blank" rel="noopener">+591 6494 9259</a></li><li>@brava <span>(por crear)</span></li><li>Hecho en Cochabamba</li></ul></div>
       </div>
       <div class="bigmark" aria-hidden="true">BRAVA</div>
-      <div class="legal"><span>BRAVA, ropa urbana personalizable</span><span>Prototipo acadÃ©mico. Precios, plazos y contactos de ejemplo.</span></div>
+      <div class="legal"><span>BRAVA, ropa urbana personalizable</span><span>Prototipo académico. Precios, plazos y contactos de ejemplo.</span></div>
     </div>
   </footer>
 </main>
@@ -1627,70 +1627,70 @@ td:first-child{font-weight:600}
   <div class="wrap pl">
     <header class="pl-head">
       <h1>Planos del sitio</h1>
-      <p class="meta">VersiÃ³n 2, 23 de octubre de 2026. Sigue ARQUITECTURA.md.</p>
-      <p>Mapa del sitio, flujo de compra y wireframes de las nueve pantallas, mÃ¡s las dos vistas clave en el celular. Los textos ya son los definitivos; los rectÃ¡ngulos con aspa marcan dÃ³nde va una foto o una ilustraciÃ³n. Los cÃ­rculos numerados remiten a las notas de cada pantalla.</p>
+      <p class="meta">Versión 2, 23 de octubre de 2026. Sigue ARQUITECTURA.md.</p>
+      <p>Mapa del sitio, flujo de compra y wireframes de las nueve pantallas, más las dos vistas clave en el celular. Los textos ya son los definitivos; los rectángulos con aspa marcan dónde va una foto o una ilustración. Los círculos numerados remiten a las notas de cada pantalla.</p>
       <div class="legendrow">
-        <span><i class="ph" style="width:26px;height:16px;min-height:0;padding:0"></i>Imagen o ilustraciÃ³n</span>
+        <span><i class="ph" style="width:26px;height:16px;min-height:0;padding:0"></i>Imagen o ilustración</span>
         <span><i class="ln" style="width:30px"></i>Texto corrido</span>
-        <span><i class="bt sm solid" style="font-style:normal">BotÃ³n</i>AcciÃ³n principal</span>
+        <span><i class="bt sm solid" style="font-style:normal">Botón</i>Acción principal</span>
       </div>
     </header>
 
     <section class="pl-sec" id="mapa">
       <h2>Mapa del sitio <small>6 secciones y un pedido global</small></h2>
-      <p>El personalizador es la puerta principal. Colecciones es la segunda: quien llega mirando diseÃ±os termina en el mismo personalizador con el diseÃ±o ya elegido.</p>
+      <p>El personalizador es la puerta principal. Colecciones es la segunda: quien llega mirando diseños termina en el mismo personalizador con el diseño ya elegido.</p>
       <div class="scrollx">
         <div class="sitemap">
           <div class="sm-root"><span class="sm-node root">Inicio</span></div>
           <div class="sm-cols">
-            <div class="sm-col"><span class="sm-node key">PersonalizÃ¡ tu prenda</span><code>/personaliza</code><ul><li>Prenda</li><li>Color</li><li>Talla</li><li>DiseÃ±o</li><li>UbicaciÃ³n</li><li>Texto</li><li>Tintas</li><li class="sub">Vista previa y precio</li></ul></div>
-            <div class="sm-col"><span class="sm-node">Colecciones</span><code>/departamentos</code><ul><li>Cocha de raÃ­z</li><li>Fauna brava</li><li>Mi departamento</li><li class="sub">Ficha de diseÃ±o</li></ul></div>
-            <div class="sm-col"><span class="sm-node">GuÃ­a de tallas</span><code>/guia-de-tallas</code><ul><li>Canguro</li><li>Polera</li><li>Gorra</li><li>CÃ³mo medir</li></ul></div>
-            <div class="sm-col"><span class="sm-node">CÃ³mo comprar</span><code>/como-comprar</code><ul><li>Pasos</li><li>Pagar con QR</li><li>Entregas</li><li>Preguntas</li></ul></div>
+            <div class="sm-col"><span class="sm-node key">Personalizá tu prenda</span><code>/personaliza</code><ul><li>Prenda</li><li>Color</li><li>Talla</li><li>Diseño</li><li>Ubicación</li><li>Texto</li><li>Tintas</li><li class="sub">Vista previa y precio</li></ul></div>
+            <div class="sm-col"><span class="sm-node">Colecciones</span><code>/departamentos</code><ul><li>Cocha de raíz</li><li>Fauna brava</li><li>Mi departamento</li><li class="sub">Ficha de diseño</li></ul></div>
+            <div class="sm-col"><span class="sm-node">Guía de tallas</span><code>/guia-de-tallas</code><ul><li>Canguro</li><li>Polera</li><li>Gorra</li><li>Cómo medir</li></ul></div>
+            <div class="sm-col"><span class="sm-node">Cómo comprar</span><code>/como-comprar</code><ul><li>Pasos</li><li>Pagar con QR</li><li>Entregas</li><li>Preguntas</li></ul></div>
             <div class="sm-col"><span class="sm-node">Contacto</span><code>/contacto</code><ul><li>WhatsApp</li><li>Instagram</li><li>Pedido especial</li></ul></div>
           </div>
-          <div class="sm-global"><span class="sm-node alt">Pedido: resumen, datos, pago QR, enviar</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sm-node alt">ConfirmaciÃ³n</span><span>se abre desde cualquier pÃ¡gina</span></div>
+          <div class="sm-global"><span class="sm-node alt">Pedido: resumen, datos, pago QR, enviar</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sm-node alt">Confirmación</span><span>se abre desde cualquier página</span></div>
         </div>
       </div>
     </section>
 
     <section class="pl-sec" id="flujo">
       <h2>Flujo de compra <small>del anuncio al taller</small></h2>
-      <p>Diez pasos del cliente y uno del taller. No hay registro de cuenta ni pasarela: el pago es por QR estÃ¡tico y el pedido se cierra por WhatsApp con el comprobante.</p>
+      <p>Diez pasos del cliente y uno del taller. No hay registro de cuenta ni pasarela: el pago es por QR estático y el pedido se cierra por WhatsApp con el comprobante.</p>
       <ol class="flow">
         <li><span>Entra a Inicio o a un enlace directo</span></li>
         <li><span>Elige la prenda</span></li>
         <li><span>Color y talla</span></li>
-        <li><span>DiseÃ±o y ubicaciÃ³n</span></li>
+        <li><span>Diseño y ubicación</span></li>
         <li><span>Texto y tintas</span></li>
         <li><span>Agrega al pedido</span></li>
         <li><span>Revisa y ajusta cantidades</span></li>
         <li><span>Datos y entrega</span></li>
         <li><span>Paga con QR</span></li>
-        <li><span>EnvÃ­a por WhatsApp con el comprobante</span></li>
+        <li><span>Envía por WhatsApp con el comprobante</span></li>
         <li class="end"><span>El taller confirma</span></li>
       </ol>
     </section>
 
     <section class="pl-sec" id="wireframes">
       <h2>Wireframes <small>P-01 a P-09, M-01 y M-02</small></h2>
-      <p>Nueve pantallas de escritorio y las dos vistas del celular donde mÃ¡s se juega la venta: el personalizador y el pago.</p>
+      <p>Nueve pantallas de escritorio y las dos vistas del celular donde más se juega la venta: el personalizador y el pago.</p>
 
       <!-- P-01 -->
       <article class="wf-row" id="p01">
         <div class="scrollx" style="margin-top:0"><div class="wf">
           <div class="wf-chrome"><i></i><i></i><i></i><span>/</span></div>
           <div class="wf-body">
-            <div class="w-nav"><b class="w-logo">BRAVA</b><span class="w-links"><span>PersonalizÃ¡</span><span>Colecciones</span><span>Tallas</span><span>CÃ³mo comprar</span><span>Contacto</span></span><span class="bt sm">Pedido (0)</span></div>
+            <div class="w-nav"><b class="w-logo">BRAVA</b><span class="w-links"><span>Personalizá</span><span>Colecciones</span><span>Tallas</span><span>Cómo comprar</span><span>Contacto</span></span><span class="bt sm">Pedido (0)</span></div>
             <div class="w-hero rel"><i class="pin">1</i>
               <div class="col"><b class="hd xl">Tu tierra.<br>Tu estilo.</b><span class="ln" style="width:85%"></span>
-                <div class="row rel" style="margin-top:6px"><i class="pin">2</i><span class="bt solid">PersonalizÃ¡ tu prenda</span><span class="bt">Ver departamentos</span></div>
+                <div class="row rel" style="margin-top:6px"><i class="pin">2</i><span class="bt solid">Personalizá tu prenda</span><span class="bt">Ver departamentos</span></div>
               </div>
-              <div class="ph" style="min-height:180px"><em>Canguro de espalda con diseÃ±o</em></div>
+              <div class="ph" style="min-height:180px"><em>Canguro de espalda con diseño</em></div>
             </div>
-            <div class="g3 rel"><i class="pin">3</i><div class="box"><span class="lab">1 ElegÃ­ la prenda</span><span class="ln"></span></div><div class="box"><span class="lab">2 ElegÃ­ el diseÃ±o</span><span class="ln"></span></div><div class="box"><span class="lab">3 Recibilo en Cocha</span><span class="ln"></span></div></div>
+            <div class="g3 rel"><i class="pin">3</i><div class="box"><span class="lab">1 Elegí la prenda</span><span class="ln"></span></div><div class="box"><span class="lab">2 Elegí el diseño</span><span class="ln"></span></div><div class="box"><span class="lab">3 Recibilo en Cocha</span><span class="ln"></span></div></div>
             <div class="rel" style="display:grid;grid-template-columns:1.35fr 1fr;gap:10px"><i class="pin">4</i>
-              <div class="ph" style="grid-row:span 2;min-height:150px"><em>Fauna brava</em></div><div class="ph"><em>Cocha de raÃ­z</em></div><div class="box"><b class="hd">Mi departamento</b><span class="ln" style="width:60%"></span></div>
+              <div class="ph" style="grid-row:span 2;min-height:150px"><em>Fauna brava</em></div><div class="ph"><em>Cocha de raíz</em></div><div class="box"><b class="hd">Mi departamento</b><span class="ln" style="width:60%"></span></div>
             </div>
             <div class="row rel"><i class="pin">5</i><div class="ph" style="flex:1;min-height:56px"></div><div class="ph" style="flex:1;min-height:56px"></div><div class="ph" style="flex:1;min-height:56px"></div><div class="ph" style="flex:1;min-height:56px"></div><div class="ph" style="flex:1;min-height:56px"></div><div class="ph" style="flex:1;min-height:56px"></div></div>
             <div class="row" style="justify-content:space-between;padding-block:8px;border-block:1.5px solid var(--wf-stroke)"><span>Hecho en Cochabamba</span><span>Pago con QR</span><span>Recojo o delivery</span></div>
@@ -1698,13 +1698,13 @@ td:first-child{font-weight:600}
         </div></div>
         <div class="wf-notes">
           <p class="wf-id">P-01</p><h3>Inicio</h3>
-          <p class="wf-goal">Que en cinco segundos se entienda quÃ© se vende y que el siguiente toque sea el personalizador.</p>
+          <p class="wf-goal">Que en cinco segundos se entienda qué se vende y que el siguiente toque sea el personalizador.</p>
           <ol class="notes">
-            <li>Lema de marca y una prenda real de espalda, porque ahÃ­ va el diseÃ±o grande.</li>
-            <li>Una sola acciÃ³n principal. Â«Ver departamentosÂ» queda como alternativa.</li>
-            <li>CÃ³mo funciona en tres pasos.</li>
-            <li>Colecciones en grilla asimÃ©trica: Fauna brava manda.</li>
-            <li>Los seis diseÃ±os, cada uno con su ficha y su enlace directo al personalizador. Debajo, franja de datos verificables, sin testimonios hasta tener clientes.</li>
+            <li>Lema de marca y una prenda real de espalda, porque ahí va el diseño grande.</li>
+            <li>Una sola acción principal. «Ver departamentos» queda como alternativa.</li>
+            <li>Cómo funciona en tres pasos.</li>
+            <li>Colecciones en grilla asimétrica: Fauna brava manda.</li>
+            <li>Los seis diseños, cada uno con su ficha y su enlace directo al personalizador. Debajo, franja de datos verificables, sin testimonios hasta tener clientes.</li>
           </ol>
           <a class="wf-link" href="#inicio">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1715,19 +1715,19 @@ td:first-child{font-weight:600}
         <div class="scrollx" style="margin-top:0"><div class="wf">
           <div class="wf-chrome"><i></i><i></i><i></i><span>/personaliza?prenda=canguro&amp;diseno=paraba</span></div>
           <div class="wf-body">
-            <b class="hd l">PersonalizÃ¡ tu prenda</b>
+            <b class="hd l">Personalizá tu prenda</b>
             <div class="g2" style="grid-template-columns:1.05fr 1fr;align-items:start">
               <div class="col rel"><i class="pin">1</i>
                 <div class="row" style="justify-content:space-between"><b class="hd">Canguro verde monte</b><span class="row"><span class="bt sm">Frente</span><span class="bt sm solid">Espalda</span></span></div>
                 <div class="ph" style="min-height:300px"><em>Vista previa en vivo</em></div>
-                <div class="row"><span class="bt sm">Espalda 30 Ã— 30 cm</span><span class="bt sm">2 tintas</span></div>
+                <div class="row"><span class="bt sm">Espalda 30 × 30 cm</span><span class="bt sm">2 tintas</span></div>
               </div>
               <div class="col" style="gap:12px">
                 <div class="col rel"><i class="pin">2</i><span class="lab">1 Prenda</span><div class="g3"><div class="ph" style="min-height:44px">Canguro</div><div class="ph" style="min-height:44px">Polera</div><div class="ph" style="min-height:44px">Gorra</div></div></div>
                 <div class="col"><span class="lab">2 Color</span><div class="row"><i class="dotc f"></i><i class="dotc"></i><i class="dotc"></i></div></div>
                 <div class="col"><span class="lab">3 Talla</span><div class="row"><span class="bt sm">S</span><span class="bt sm solid">M</span><span class="bt sm">L</span><span class="bt sm">XL</span></div></div>
-                <div class="col rel"><i class="pin">3</i><span class="lab">4 DiseÃ±o</span><div class="g3"><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div></div></div>
-                <div class="col"><span class="lab">5 UbicaciÃ³n</span><div class="row"><span class="bt sm">Pecho</span><span class="bt sm solid">Espalda</span><span class="bt sm">Pecho + espalda</span></div></div>
+                <div class="col rel"><i class="pin">3</i><span class="lab">4 Diseño</span><div class="g3"><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div><div class="ph" style="min-height:40px"></div></div></div>
+                <div class="col"><span class="lab">5 Ubicación</span><div class="row"><span class="bt sm">Pecho</span><span class="bt sm solid">Espalda</span><span class="bt sm">Pecho + espalda</span></div></div>
                 <div class="col"><span class="lab">6 Texto y 7 Tintas</span><div class="row"><span class="bt sm">COCHABAMBA</span><span class="bt sm">1 tinta</span><span class="bt sm solid">2 tintas</span></div></div>
                 <div class="box rel" style="border-color:var(--ink)"><i class="pin">4</i><span class="lab">Orden de taller</span><span class="ln" style="width:80%"></span><span class="ln" style="width:60%"></span><div class="row" style="justify-content:space-between"><b class="hd l">Bs 220</b><span class="bt solid">Agregar al pedido</span></div></div>
               </div>
@@ -1738,10 +1738,10 @@ td:first-child{font-weight:600}
           <p class="wf-id">P-02</p><h3>Personalizador</h3>
           <p class="wf-goal">Elegir y ver el resultado en la misma pantalla. Acepta enlaces directos para anuncios.</p>
           <ol class="notes">
-            <li>La vista previa queda fija mientras se baja. Cambia de lado sola segÃºn la ubicaciÃ³n.</li>
-            <li>Siete pasos en orden. Cada uno muestra la elecciÃ³n actual junto al tÃ­tulo.</li>
-            <li>Solo diseÃ±os del catÃ¡logo y posiciones predefinidas. Las opciones inviables aparecen desactivadas con su motivo.</li>
-            <li>Orden de taller con medidas, tintas y precio desglosado. Al agregar aparece un aviso con Â«Ver pedidoÂ» y Â«Armar otraÂ».</li>
+            <li>La vista previa queda fija mientras se baja. Cambia de lado sola según la ubicación.</li>
+            <li>Siete pasos en orden. Cada uno muestra la elección actual junto al título.</li>
+            <li>Solo diseños del catálogo y posiciones predefinidas. Las opciones inviables aparecen desactivadas con su motivo.</li>
+            <li>Orden de taller con medidas, tintas y precio desglosado. Al agregar aparece un aviso con «Ver pedido» y «Armar otra».</li>
           </ol>
           <a class="wf-link" href="#personaliza">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1753,25 +1753,25 @@ td:first-child{font-weight:600}
           <div class="wf-chrome"><i></i><i></i><i></i><span>/departamentos</span></div>
           <div class="wf-body">
             <b class="hd l">Colecciones</b>
-            <div class="row rel"><i class="pin">1</i><span class="bt sm solid">Todas</span><span class="bt sm">Cocha de raÃ­z</span><span class="bt sm">Fauna brava</span><span class="bt sm">Mi departamento</span></div>
+            <div class="row rel"><i class="pin">1</i><span class="bt sm solid">Todas</span><span class="bt sm">Cocha de raíz</span><span class="bt sm">Fauna brava</span><span class="bt sm">Mi departamento</span></div>
             <div class="g3 rel"><i class="pin">2</i>
               <div class="box"><div class="ph" style="min-height:90px"><em>Paraba frente roja</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
               <div class="box"><div class="ph" style="min-height:90px"><em>Jucumari</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
-              <div class="box"><div class="ph" style="min-height:90px"><em>CÃ³ndor</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
+              <div class="box"><div class="ph" style="min-height:90px"><em>Cóndor</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
               <div class="box"><div class="ph" style="min-height:90px"><em>Tunari</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
               <div class="box"><div class="ph" style="min-height:90px"><em>Cristo de la Concordia</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
               <div class="box"><div class="ph" style="min-height:90px"><em>Kantuta</em></div><span class="row"><span class="bt sm">Ver ficha</span><span class="bt sm">Personalizar</span></span></div>
             </div>
-            <div class="box rel" style="border-style:dashed"><i class="pin">3</i><span class="lab">Mi departamento, prÃ³ximamente</span><div class="row"><span class="bt sm solid">Cochabamba</span><span class="bt sm">La Paz</span><span class="bt sm">Santa Cruz</span><span class="bt sm">y 6 mÃ¡s</span></div></div>
+            <div class="box rel" style="border-style:dashed"><i class="pin">3</i><span class="lab">Mi departamento, próximamente</span><div class="row"><span class="bt sm solid">Cochabamba</span><span class="bt sm">La Paz</span><span class="bt sm">Santa Cruz</span><span class="bt sm">y 6 más</span></div></div>
           </div>
         </div></div>
         <div class="wf-notes">
           <p class="wf-id">P-03</p><h3>Colecciones</h3>
-          <p class="wf-goal">Mostrar el catÃ¡logo completo y llevar cada diseÃ±o a su ficha o al personalizador.</p>
+          <p class="wf-goal">Mostrar el catálogo completo y llevar cada diseño a su ficha o al personalizador.</p>
           <ol class="notes">
-            <li>Filtro por colecciÃ³n. Con seis diseÃ±os alcanza; no hace falta buscador.</li>
-            <li>Tarjeta por diseÃ±o con dos salidas: la ficha y el personalizador con el diseÃ±o cargado.</li>
-            <li>Los departamentos aparecen aunque no tengan diseÃ±o: anuncian la colecciÃ³n.</li>
+            <li>Filtro por colección. Con seis diseños alcanza; no hace falta buscador.</li>
+            <li>Tarjeta por diseño con dos salidas: la ficha y el personalizador con el diseño cargado.</li>
+            <li>Los departamentos aparecen aunque no tengan diseño: anuncian la colección.</li>
           </ol>
           <a class="wf-link" href="#departamentos">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1784,24 +1784,24 @@ td:first-child{font-weight:600}
           <div class="wf-body">
             <span class="lab">Colecciones / Fauna brava</span>
             <div class="g2" style="align-items:start">
-              <div class="col rel"><i class="pin">1</i><div class="ph" style="min-height:240px"><em>DiseÃ±o en grande</em></div></div>
+              <div class="col rel"><i class="pin">1</i><div class="ph" style="min-height:240px"><em>Diseño en grande</em></div></div>
               <div class="col" style="gap:10px">
                 <b class="hd l">Paraba frente roja</b><span><i>Ara rubrogenys</i></span>
                 <div class="col rel"><i class="pin">2</i><span class="ln"></span><span class="ln" style="width:85%"></span><span class="ln" style="width:65%"></span></div>
-                <div class="col rel"><i class="pin">3</i><span class="lab">CÃ³mo queda en cada prenda</span><div class="g3"><div class="ph" style="min-height:56px">Canguro</div><div class="ph" style="min-height:56px">Polera</div><div class="ph" style="min-height:56px">Gorra</div></div></div>
-                <div class="col"><span class="lab">Tintas y medidas</span><span>2 tintas. Espalda 30 Ã— 35, pecho 10 Ã— 10, gorra 10 Ã— 6 cm</span></div>
-                <span class="bt solid" style="justify-self:start">Usar este diseÃ±o</span>
+                <div class="col rel"><i class="pin">3</i><span class="lab">Cómo queda en cada prenda</span><div class="g3"><div class="ph" style="min-height:56px">Canguro</div><div class="ph" style="min-height:56px">Polera</div><div class="ph" style="min-height:56px">Gorra</div></div></div>
+                <div class="col"><span class="lab">Tintas y medidas</span><span>2 tintas. Espalda 30 × 35, pecho 10 × 10, gorra 10 × 6 cm</span></div>
+                <span class="bt solid" style="justify-self:start">Usar este diseño</span>
               </div>
             </div>
           </div>
         </div></div>
         <div class="wf-notes">
-          <p class="wf-id">P-04</p><h3>Ficha de diseÃ±o</h3>
-          <p class="wf-goal">Contar de dÃ³nde sale el diseÃ±o. Es lo que lo separa de una polera con un animal cualquiera.</p>
+          <p class="wf-id">P-04</p><h3>Ficha de diseño</h3>
+          <p class="wf-goal">Contar de dónde sale el diseño. Es lo que lo separa de una polera con un animal cualquiera.</p>
           <ol class="notes">
-            <li>DiseÃ±o en grande. En la versiÃ³n con fotos, tambiÃ©n puesto en las tres prendas.</li>
+            <li>Diseño en grande. En la versión con fotos, también puesto en las tres prendas.</li>
             <li>Dato real y un texto corto sobre la especie o el lugar, revisado contra fuentes.</li>
-            <li>Una miniatura por prenda: tocarla abre el personalizador con esa prenda y este diseÃ±o.</li>
+            <li>Una miniatura por prenda: tocarla abre el personalizador con esa prenda y este diseño.</li>
           </ol>
           <a class="wf-link" href="#departamento-paraba">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1812,21 +1812,21 @@ td:first-child{font-weight:600}
         <div class="scrollx" style="margin-top:0"><div class="wf">
           <div class="wf-chrome"><i></i><i></i><i></i><span>/guia-de-tallas</span></div>
           <div class="wf-body">
-            <b class="hd l">GuÃ­a de tallas</b>
+            <b class="hd l">Guía de tallas</b>
             <div class="row rel"><i class="pin">1</i><span class="bt sm solid">Canguro</span><span class="bt sm">Polera</span><span class="bt sm">Gorra</span></div>
             <div class="g2" style="grid-template-columns:1.3fr 1fr;align-items:start">
               <div class="wtable rel"><i class="pin">2</i><span>Talla</span><span>Ancho</span><span>Largo</span><span>Manga</span><span>S</span><span>54</span><span>68</span><span>60</span><span>M</span><span>57</span><span>71</span><span>62</span><span>L</span><span>60</span><span>74</span><span>64</span><span>XL</span><span>63</span><span>77</span><span>66</span></div>
-              <div class="col rel"><i class="pin">3</i><div class="ph" style="min-height:140px"><em>DÃ³nde medir A y L</em></div></div>
+              <div class="col rel"><i class="pin">3</i><div class="ph" style="min-height:140px"><em>Dónde medir A y L</em></div></div>
             </div>
           </div>
         </div></div>
         <div class="wf-notes">
-          <p class="wf-id">P-05</p><h3>GuÃ­a de tallas</h3>
-          <p class="wf-goal">Bajar los cambios por talla, que en ropa estampada por pedido son pÃ©rdida directa.</p>
+          <p class="wf-id">P-05</p><h3>Guía de tallas</h3>
+          <p class="wf-goal">Bajar los cambios por talla, que en ropa estampada por pedido son pérdida directa.</p>
           <ol class="notes">
-            <li>Una pestaÃ±a por prenda. La gorra explica el contorno regulable.</li>
-            <li>Medidas de la prenda en centÃ­metros. Se cargan cuando el proveedor las confirme.</li>
-            <li>Dibujo de cÃ³mo medir una prenda propia sobre la mesa.</li>
+            <li>Una pestaña por prenda. La gorra explica el contorno regulable.</li>
+            <li>Medidas de la prenda en centímetros. Se cargan cuando el proveedor las confirme.</li>
+            <li>Dibujo de cómo medir una prenda propia sobre la mesa.</li>
           </ol>
           <a class="wf-link" href="#guia-de-tallas">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1837,21 +1837,21 @@ td:first-child{font-weight:600}
         <div class="scrollx" style="margin-top:0"><div class="wf">
           <div class="wf-chrome"><i></i><i></i><i></i><span>/como-comprar</span></div>
           <div class="wf-body">
-            <b class="hd l">CÃ³mo comprar</b>
-            <div class="g4 rel"><i class="pin">1</i><div class="box"><span class="lab">1 ArmÃ¡</span><span class="ln"></span></div><div class="box"><span class="lab">2 RevisÃ¡</span><span class="ln"></span></div><div class="box"><span class="lab">3 PagÃ¡ con QR</span><span class="ln"></span></div><div class="box"><span class="lab">4 EnviÃ¡ por WhatsApp</span><span class="ln"></span></div></div>
-            <div class="g2 rel" style="align-items:center"><i class="pin">2</i><div class="col"><b class="hd">Pagar con QR desde el mismo celular</b><span>1 Guardar QR</span><span>2 App del banco</span><span>3 Monto y cÃ³digo</span></div><div class="row" style="justify-content:center"><div class="ph" style="width:60px;min-height:110px"></div><div class="ph" style="width:60px;min-height:110px"></div><div class="ph" style="width:60px;min-height:110px"></div></div></div>
-            <div class="g3 rel"><i class="pin">3</i><div class="box"><span class="lab">ElaboraciÃ³n</span><span class="ln"></span></div><div class="box"><span class="lab">Entregas</span><span class="ln"></span></div><div class="box"><span class="lab">Cuidados</span><span class="ln"></span></div></div>
-            <div class="col rel"><i class="pin">4</i><div class="box">Â¿CÃ³mo sÃ© que recibieron mi pago? +</div><div class="box">Â¿Puedo subir mi propio diseÃ±o? +</div><div class="box">Â¿QuÃ© pasa si me equivoco de talla? +</div></div>
+            <b class="hd l">Cómo comprar</b>
+            <div class="g4 rel"><i class="pin">1</i><div class="box"><span class="lab">1 Armá</span><span class="ln"></span></div><div class="box"><span class="lab">2 Revisá</span><span class="ln"></span></div><div class="box"><span class="lab">3 Pagá con QR</span><span class="ln"></span></div><div class="box"><span class="lab">4 Enviá por WhatsApp</span><span class="ln"></span></div></div>
+            <div class="g2 rel" style="align-items:center"><i class="pin">2</i><div class="col"><b class="hd">Pagar con QR desde el mismo celular</b><span>1 Guardar QR</span><span>2 App del banco</span><span>3 Monto y código</span></div><div class="row" style="justify-content:center"><div class="ph" style="width:60px;min-height:110px"></div><div class="ph" style="width:60px;min-height:110px"></div><div class="ph" style="width:60px;min-height:110px"></div></div></div>
+            <div class="g3 rel"><i class="pin">3</i><div class="box"><span class="lab">Elaboración</span><span class="ln"></span></div><div class="box"><span class="lab">Entregas</span><span class="ln"></span></div><div class="box"><span class="lab">Cuidados</span><span class="ln"></span></div></div>
+            <div class="col rel"><i class="pin">4</i><div class="box">¿Cómo sé que recibieron mi pago? +</div><div class="box">¿Puedo subir mi propio diseño? +</div><div class="box">¿Qué pasa si me equivoco de talla? +</div></div>
           </div>
         </div></div>
         <div class="wf-notes">
-          <p class="wf-id">P-06</p><h3>CÃ³mo comprar</h3>
-          <p class="wf-goal">Responder antes de que pregunten: cÃ³mo se paga, cuÃ¡nto tarda y cÃ³mo llega.</p>
+          <p class="wf-id">P-06</p><h3>Cómo comprar</h3>
+          <p class="wf-goal">Responder antes de que pregunten: cómo se paga, cuánto tarda y cómo llega.</p>
           <ol class="notes">
             <li>Cuatro pasos, del personalizador al WhatsApp.</li>
-            <li>CÃ³mo pagar con QR desde el mismo celular, que es la duda que mÃ¡s va a frenar la compra.</li>
+            <li>Cómo pagar con QR desde el mismo celular, que es la duda que más va a frenar la compra.</li>
             <li>Plazos, entregas y cuidados. Se completan con datos reales del taller.</li>
-            <li>Preguntas frecuentes en acordeÃ³n.</li>
+            <li>Preguntas frecuentes en acordeón.</li>
           </ol>
           <a class="wf-link" href="#como-comprar">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1865,13 +1865,13 @@ td:first-child{font-weight:600}
             <b class="hd l">Contacto</b>
             <div class="g2" style="align-items:start">
               <div class="col rel"><i class="pin">1</i><div class="box"><span class="lab">WhatsApp</span><span class="ln" style="width:60%"></span></div><div class="box"><span class="lab">Instagram y TikTok</span><span class="ln" style="width:40%"></span></div><div class="box"><span class="lab">Taller</span><span class="ln" style="width:70%"></span></div></div>
-              <div class="col rel"><i class="pin">2</i><span class="lab">Nombre</span><div class="box" style="min-height:30px"></div><span class="lab">QuÃ© necesitÃ¡s</span><div class="box" style="min-height:60px"></div><span class="lab">Cantidad aproximada</span><div class="box" style="min-height:30px"></div><span class="bt solid" style="justify-self:start">Escribir por WhatsApp</span></div>
+              <div class="col rel"><i class="pin">2</i><span class="lab">Nombre</span><div class="box" style="min-height:30px"></div><span class="lab">Qué necesitás</span><div class="box" style="min-height:60px"></div><span class="lab">Cantidad aproximada</span><div class="box" style="min-height:30px"></div><span class="bt solid" style="justify-self:start">Escribir por WhatsApp</span></div>
             </div>
           </div>
         </div></div>
         <div class="wf-notes">
           <p class="wf-id">P-07</p><h3>Contacto</h3>
-          <p class="wf-goal">Atender lo que no entra en el personalizador: grupos, promociones y diseÃ±os propios.</p>
+          <p class="wf-goal">Atender lo que no entra en el personalizador: grupos, promociones y diseños propios.</p>
           <ol class="notes">
             <li>WhatsApp, redes y horario a la vista.</li>
             <li>Formulario corto que arma un mensaje de WhatsApp. No pasa por el QR, porque el precio se cotiza.</li>
@@ -1889,23 +1889,23 @@ td:first-child{font-weight:600}
             <div class="wsteps rel"><i class="pin">1</i><span>1 Resumen</span><span>2 Datos y entrega</span><span class="on">3 Pago</span><span>4 Enviar</span></div>
             <div class="g2" style="grid-template-columns:1.5fr 1fr;align-items:start">
               <div class="g2" style="align-items:start">
-                <div class="col rel"><i class="pin">2</i><div class="box" style="background:var(--wf-ink);color:var(--card)"><span>Monto exacto</span><b class="hd xl" style="color:var(--card)">Bs 325</b><span class="bt sm" style="border-color:var(--card)">Copiar monto</span></div><div class="box" style="border-style:dashed">CÃ³digo BR-2310-K7Q para la glosa</div></div>
-                <div class="col rel" style="justify-items:center"><i class="pin">3</i><div class="wqr"></div><span class="bt sm solid">Guardar QR</span><span>PagÃ¡ desde la galerÃ­a</span></div>
+                <div class="col rel"><i class="pin">2</i><div class="box" style="background:var(--wf-ink);color:var(--card)"><span>Monto exacto</span><b class="hd xl" style="color:var(--card)">Bs 325</b><span class="bt sm" style="border-color:var(--card)">Copiar monto</span></div><div class="box" style="border-style:dashed">Código BR-2310-K7Q para la glosa</div></div>
+                <div class="col rel" style="justify-items:center"><i class="pin">3</i><div class="wqr"></div><span class="bt sm solid">Guardar QR</span><span>Pagá desde la galería</span></div>
               </div>
               <div class="box rel"><i class="pin">4</i><b class="hd">Resumen</b><span class="ln"></span><span class="ln" style="width:70%"></span><div class="row" style="justify-content:space-between"><span>Total</span><b class="hd l">Bs 325</b></div></div>
             </div>
-            <div class="box" style="display:flex;align-items:center;gap:8px"><i style="width:14px;height:14px;border:1.5px solid var(--wf-ink);border-radius:3px"></i>Ya paguÃ© Bs 325 con el cÃ³digo BR-2310-K7Q</div>
-            <div class="row" style="justify-content:space-between"><span class="bt">AtrÃ¡s</span><span class="bt solid">Continuar</span></div>
+            <div class="box" style="display:flex;align-items:center;gap:8px"><i style="width:14px;height:14px;border:1.5px solid var(--wf-ink);border-radius:3px"></i>Ya pagué Bs 325 con el código BR-2310-K7Q</div>
+            <div class="row" style="justify-content:space-between"><span class="bt">Atrás</span><span class="bt solid">Continuar</span></div>
           </div>
         </div></div>
         <div class="wf-notes">
           <p class="wf-id">P-08</p><h3>Pedido y pago QR</h3>
-          <p class="wf-goal">Cerrar la compra sin cuentas ni pasarela: el monto correcto, el cÃ³digo y el comprobante.</p>
+          <p class="wf-goal">Cerrar la compra sin cuentas ni pasarela: el monto correcto, el código y el comprobante.</p>
           <ol class="notes">
-            <li>Cuatro pasos visibles: resumen, datos y entrega, pago y envÃ­o.</li>
-            <li>Como el QR es estÃ¡tico, el monto va en grande con Â«Copiar montoÂ», y el cÃ³digo del pedido va a la glosa.</li>
-            <li>QR con Â«Guardar QRÂ» para pagar desde la galerÃ­a del mismo celular. En la compu se escanea.</li>
-            <li>Resumen fijo con el total y el cÃ³digo. El Ãºltimo paso arma el mensaje de WhatsApp y recuerda adjuntar el comprobante.</li>
+            <li>Cuatro pasos visibles: resumen, datos y entrega, pago y envío.</li>
+            <li>Como el QR es estático, el monto va en grande con «Copiar monto», y el código del pedido va a la glosa.</li>
+            <li>QR con «Guardar QR» para pagar desde la galería del mismo celular. En la compu se escanea.</li>
+            <li>Resumen fijo con el total y el código. El último paso arma el mensaje de WhatsApp y recuerda adjuntar el comprobante.</li>
           </ol>
           <button class="wf-link" type="button" data-demo>Ver en la maqueta con un pedido de ejemplo <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
@@ -1917,17 +1917,17 @@ td:first-child{font-weight:600}
           <div class="wf-chrome"><i></i><i></i><i></i><span>/pedido/enviado</span></div>
           <div class="wf-body">
             <div class="col rel"><i class="pin">1</i><b class="hd xl">Pedido enviado</b><b class="w-logo" style="color:var(--terra);font-size:24px">BR-2310-K7Q</b></div>
-            <div class="g3 rel"><i class="pin">2</i><div class="box"><span class="lab">1 Revisamos el comprobante</span><span class="ln"></span></div><div class="box"><span class="lab">2 Te confirmamos la fecha</span><span class="ln"></span></div><div class="box"><span class="lab">3 Te avisamos cuando estÃ© listo</span><span class="ln"></span></div></div>
+            <div class="g3 rel"><i class="pin">2</i><div class="box"><span class="lab">1 Revisamos el comprobante</span><span class="ln"></span></div><div class="box"><span class="lab">2 Te confirmamos la fecha</span><span class="ln"></span></div><div class="box"><span class="lab">3 Te avisamos cuando esté listo</span><span class="ln"></span></div></div>
             <div class="row rel"><i class="pin">3</i><span class="bt">Volver a abrir WhatsApp</span><span class="bt solid">Armar otro pedido</span></div>
           </div>
         </div></div>
         <div class="wf-notes">
-          <p class="wf-id">P-09</p><h3>ConfirmaciÃ³n</h3>
-          <p class="wf-goal">Que el cliente sepa quÃ© pasa ahora y tenga cÃ³mo recuperar el mensaje si WhatsApp no se abriÃ³.</p>
+          <p class="wf-id">P-09</p><h3>Confirmación</h3>
+          <p class="wf-goal">Que el cliente sepa qué pasa ahora y tenga cómo recuperar el mensaje si WhatsApp no se abrió.</p>
           <ol class="notes">
-            <li>El cÃ³digo del pedido en grande: es lo que va a nombrar si escribe al taller.</li>
+            <li>El código del pedido en grande: es lo que va a nombrar si escribe al taller.</li>
             <li>Los tres pasos que siguen del lado del taller.</li>
-            <li>Volver a abrir WhatsApp por si fallÃ³, o empezar otro pedido.</li>
+            <li>Volver a abrir WhatsApp por si falló, o empezar otro pedido.</li>
           </ol>
           <a class="wf-link" href="#enviado">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1950,19 +1950,19 @@ td:first-child{font-weight:600}
               <div class="wsteps" style="font-size:10px"><span>1</span><span>2</span><span class="on">3 Pago</span><span>4</span></div>
               <div class="box rel" style="background:var(--wf-ink);color:var(--card)"><i class="pin">3</i><span>Monto exacto</span><b class="hd xl" style="color:var(--card)">Bs 325</b></div>
               <div class="col" style="justify-items:center"><div class="wqr"></div></div>
-              <div class="bar rel"><i class="pin">4</i><b>Guardar QR</b><span>en la galerÃ­a</span></div>
+              <div class="bar rel"><i class="pin">4</i><b>Guardar QR</b><span>en la galería</span></div>
               <span class="ln" style="width:85%"></span><span class="ln" style="width:65%"></span>
             </div>
           </div>
         </div>
         <div class="wf-notes">
           <p class="wf-id">M-01 y M-02</p><h3>En el celular</h3>
-          <p class="wf-goal">Que todo se haga con una mano: la mayorÃ­a va a llegar desde un anuncio o una historia de Instagram.</p>
+          <p class="wf-goal">Que todo se haga con una mano: la mayoría va a llegar desde un anuncio o una historia de Instagram.</p>
           <ol class="notes">
             <li>La prenda ocupa el tercio superior y no se mueve al bajar.</li>
-            <li>Barra inferior fija con el precio y Â«AgregarÂ».</li>
+            <li>Barra inferior fija con el precio y «Agregar».</li>
             <li>En el pago, el monto es lo primero que se ve.</li>
-            <li>Â«Guardar QRÂ» es la acciÃ³n principal del paso, porque el celular no escanea su propia pantalla.</li>
+            <li>«Guardar QR» es la acción principal del paso, porque el celular no escanea su propia pantalla.</li>
           </ol>
           <a class="wf-link" href="#personaliza">Ver en la maqueta <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -2001,7 +2001,7 @@ td:first-child{font-weight:600}
     set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
   };
 
-  /* ---------- CatÃ¡logo (precios de ejemplo, ver ARQUITECTURA.md Ã‚Â§7) ---------- */
+  /* ---------- Catálogo (precios de ejemplo, ver ARQUITECTURA.md Â§7) ---------- */
   const CONFIG={whatsapp:'591XXXXXXXX',delivery:15,zonas:['Centro','Cala Cala','Queru Queru','Sarco','Tupuraya','Muyurina','Recoleta','Otra zona de la ciudad']};
   const COL={
     blanco:{n:'Blanco',hex:'#F4F2EC',dark:false},
@@ -2014,9 +2014,9 @@ td:first-child{font-weight:600}
     morado:{n:'Morado',hex:'#6B3FA0',dark:true},
     monte:{n:'Verde monte',hex:'#264A3B',dark:true,interno:true}
   };
-  /* Colores a la venta: solo estos cuatro (las fotos de los demÃ¡s siguen en prendas/ por si se vuelven a abrir). */
+  /* Colores a la venta: solo estos cuatro (las fotos de los demás siguen en prendas/ por si se vuelven a abrir). */
   const COLORES_PRENDA=['blanco','negro','marino','pacay'];
-  /* Fotos de prenda (maniquÃ­ fantasma) ya coloreadas: prendas/<prenda>-<frente|espalda>-<color>.webp (ver tools/colorear_prendas.py) */
+  /* Fotos de prenda (maniquí fantasma) ya coloreadas: prendas/<prenda>-<frente|espalda>-<color>.webp (ver tools/colorear_prendas.py) */
   const IMG=(prenda,side,color)=>'prendas/'+PRENDAS[prenda].img+'-'+(side==='back'&&PRENDAS[prenda].back?'espalda':'frente')+'-'+color+'.webp';
   const PRECARGA=new Set();
   function precarga(prenda,color){ ['front','back'].forEach(sd=>{ const u=IMG(prenda,sd,color); if(PRECARGA.has(u)) return; PRECARGA.add(u); const i=new Image(); i.decoding='async'; i.src=u; }); }
@@ -2025,23 +2025,23 @@ td:first-child{font-weight:600}
       chest:{x:250,y:122,w:38,h:23},backp:{x:140,y:156,w:120,h:120}},
     polera:{n:'Polera',base:90,colores:COLORES_PRENDA,tallas:['S','M','L','XL'],ub:['pecho','espalda'],front:'s-tee-front',back:'s-tee-back',img:'polera',
       chest:{x:213,y:92,w:58,h:24},backp:{x:144,y:100,w:112,h:112}},
-    gorra:{n:'Gorra',base:70,colores:COLORES_PRENDA,tallas:['Ãšnica'],ub:['frente'],front:'s-cap',back:null,img:'gorra',
+    gorra:{n:'Gorra',base:70,colores:COLORES_PRENDA,tallas:['Única'],ub:['frente'],front:'s-cap',back:null,img:'gorra',
       cap:{x:134,y:138,w:132,h:79}}
   };
-  const UB={pecho:{n:'Pecho',extra:15,med:'10 Ã— 6 cm'},espalda:{n:'Espalda',extra:30,med:'30 Ã— 30 cm',logo:true},ambos:{n:'Pecho + espalda',extra:40,med:'10 Ã— 6 cm + 30 Ã— 30 cm'},frente:{n:'Frente',extra:20,med:'10 Ã— 6 cm'}};
-  const DEPS_TODOS=[{id:'cochabamba',n:'Cochabamba',contiene:['Cristo de la Concordia', 'Sombrero de chola', 'Catedral y plaza', 'MansiÃ³n seÃ±orial', 'Choclo', 'Frases: Â«KochitaÂ», Â«KikosÂ», Â«CojudoÂ», Â«AhicitosÂ»'],palabras:['COCHA','Qhochala','Eterna primavera','La Cancha']},{id:'lapaz',n:'La Paz',contiene:['Kusillo', 'TelefÃ©rico', 'Iglesia colonial', 'CÃ³ndor', 'Llama', 'Frases: Â«YapitaÂ», Â«Que ptasÂ», Â«Aquicitos esÂ», Â«Mi cuateÂ»'],palabras:['LA PAZ','Illimani','Jallalla','Titicaca']},{id:'santacruz',n:'Santa Cruz',contiene:['TucÃ¡n', 'Guacamayo', 'Catedral con palmeras', 'Toborochi', 'Sombrero de saÃ³', 'CorazÃ³n Â«CuÃ±apÃ©Â»', 'Frases: Â«Sos opaÂ», Â«Tas yescaÂ», Â«Ya puej parienteÂ»'],palabras:['SANTA CRUZ','Camba','ChiquitanÃ­a','CuÃ±apÃ©']},{id:'oruro',n:'Oruro',contiene:['MÃ¡scaras de diablada', 'Llama con aguayo', 'Casco de minero', 'Quirquincho', 'Vagoneta minera', 'Serpentinas', 'Frase: Â«Carnaval x 100preÂ»'],palabras:['ORURO','Diablada','Capital del Folklore','SocavÃ³n']},{id:'potosi',n:'PotosÃ­',contiene:['Cerro Rico', 'Salar de Uyuni', 'Iglesia colonial', 'Llamas', 'Cactus', 'Pututu (cuerno)', 'Charque colgado', 'SalteÃ±a', 'Frase: Â«BofoÂ»'],palabras:['POTOSÃ','Cerro Rico','Uyuni','Vale un PotosÃ­']},{id:'chuquisaca',n:'Chuquisaca',contiene:['Casa de la Libertad','Plaza 25 de Mayo','Virgen de Guadalupe','Huellas de dinosaurio','Titanosaurio','Poncho de Tarabuco','Montera','Chocolate','Maragua'],palabras:['SUCRE','Ciudad Blanca','25 de Mayo','Tarabuco','Pujllay']},{id:'tarija',n:'Tarija',contiene:['ViÃ±edo','Singani','Guitarra chapaca','San Francisco','San Roque','Chancho a la cruz','CaÃ±Ã³n de Sama','PaÃ±uelo de cueca'],palabras:['TARIJA','Chapaco','Singani','Valle de la ConcepciÃ³n','Cueca chapaca']},{id:'beni',n:'Beni',contiene:['Bufeo','Paraba barba azul','Carpincho','CaimÃ¡n negro','Moto de Trinidad','MotacÃº','Hamaca','Llanos de Moxos','Canoa en el MamorÃ©'],palabras:['BENI','Llanos de Moxos','MamorÃ©','Trinidad','Paraba azul']},{id:'pando',n:'Pando',contiene:['Capibara', 'Canoa en el rÃ­o', 'Pescados', 'CastaÃ±o amazÃ³nico', 'CastaÃ±as y frutos', 'Racimos de frutos', 'Frases: Â«Bora!Â», Â«TortitaÂ», Â«Me realeronÂ», Â«No tengo ni una fichaÂ»'],palabras:['PANDO','Cobija','CastaÃ±a','AmazonÃ­a','Siringa']}];
+  const UB={pecho:{n:'Pecho',extra:15,med:'10 × 6 cm'},espalda:{n:'Espalda',extra:30,med:'30 × 30 cm',logo:true},ambos:{n:'Pecho + espalda',extra:40,med:'10 × 6 cm + 30 × 30 cm'},frente:{n:'Frente',extra:20,med:'10 × 6 cm'}};
+  const DEPS_TODOS=[{id:'cochabamba',n:'Cochabamba',contiene:['Cristo de la Concordia', 'Sombrero de chola', 'Catedral y plaza', 'Mansión señorial', 'Choclo', 'Frases: «Kochita», «Kikos», «Cojudo», «Ahicitos»'],palabras:['COCHA','Qhochala','Eterna primavera','La Cancha']},{id:'lapaz',n:'La Paz',contiene:['Kusillo', 'Teleférico', 'Iglesia colonial', 'Cóndor', 'Llama', 'Frases: «Yapita», «Que ptas», «Aquicitos es», «Mi cuate»'],palabras:['LA PAZ','Illimani','Jallalla','Titicaca']},{id:'santacruz',n:'Santa Cruz',contiene:['Tucán', 'Guacamayo', 'Catedral con palmeras', 'Toborochi', 'Sombrero de saó', 'Corazón «Cuñapé»', 'Frases: «Sos opa», «Tas yesca», «Ya puej pariente»'],palabras:['SANTA CRUZ','Camba','Chiquitanía','Cuñapé']},{id:'oruro',n:'Oruro',contiene:['Máscaras de diablada', 'Llama con aguayo', 'Casco de minero', 'Quirquincho', 'Vagoneta minera', 'Serpentinas', 'Frase: «Carnaval x 100pre»'],palabras:['ORURO','Diablada','Capital del Folklore','Socavón']},{id:'potosi',n:'Potosí',contiene:['Cerro Rico', 'Salar de Uyuni', 'Iglesia colonial', 'Llamas', 'Cactus', 'Pututu (cuerno)', 'Charque colgado', 'Salteña', 'Frase: «Bofo»'],palabras:['POTOSÍ','Cerro Rico','Uyuni','Vale un Potosí']},{id:'chuquisaca',n:'Chuquisaca',contiene:['Casa de la Libertad','Plaza 25 de Mayo','Virgen de Guadalupe','Huellas de dinosaurio','Titanosaurio','Poncho de Tarabuco','Montera','Chocolate','Maragua'],palabras:['SUCRE','Ciudad Blanca','25 de Mayo','Tarabuco','Pujllay']},{id:'tarija',n:'Tarija',contiene:['Viñedo','Singani','Guitarra chapaca','San Francisco','San Roque','Chancho a la cruz','Cañón de Sama','Pañuelo de cueca'],palabras:['TARIJA','Chapaco','Singani','Valle de la Concepción','Cueca chapaca']},{id:'beni',n:'Beni',contiene:['Bufeo','Paraba barba azul','Carpincho','Caimán negro','Moto de Trinidad','Motacú','Hamaca','Llanos de Moxos','Canoa en el Mamoré'],palabras:['BENI','Llanos de Moxos','Mamoré','Trinidad','Paraba azul']},{id:'pando',n:'Pando',contiene:['Capibara', 'Canoa en el río', 'Pescados', 'Castaño amazónico', 'Castañas y frutos', 'Racimos de frutos', 'Frases: «Bora!», «Tortita», «Me realeron», «No tengo ni una ficha»'],palabras:['PANDO','Cobija','Castaña','Amazonía','Siringa']}];
   const ACC={ocre:{n:'Ocre',hex:'#D9A93F'},terra:{n:'Terracota',hex:'#C65A34'}};
   const TINTA2=10;
   const BS=n=>'Bs '+n;
-  /* Prueba: solo se muestran los departamentos que ya tienen su arte de serigrafÃ­a. Poner SOLO_CON_ARTE=false para volver a los 9. */
+  /* Prueba: solo se muestran los departamentos que ya tienen su arte de serigrafía. Poner SOLO_CON_ARTE=false para volver a los 9. */
   const SOLO_CON_ARTE=true;
   const hasArte=id=>!!document.getElementById('a-'+id);
-  /* Poleras: catÃ¡logo propio, a todo color (disenos/polera, sÃ­mbolos p-<id>; ver tools/importar_polera.py). No se mezcla con el arte de los canguros. La lista manda el orden. */
-  const PDISENOS={lapaz:[['lapaz-poster','La Paz, Illimani'],['lapaz-ajayu','Ciudad Ajayu'],['lapaz-saltena','SalteÃ±a'],['lapaz-mamani','La Mamani'],['lapaz-kusillo','Kusillo']],oruro:[['oruro-carnaval','Carnaval 1956']]};
+  /* Poleras: catálogo propio, a todo color (disenos/polera, símbolos p-<id>; ver tools/importar_polera.py). No se mezcla con el arte de los canguros. La lista manda el orden. */
+  const PDISENOS={lapaz:[['lapaz-poster','La Paz, Illimani'],['lapaz-ajayu','Ciudad Ajayu'],['lapaz-saltena','Salteña'],['lapaz-mamani','La Mamani'],['lapaz-kusillo','Kusillo']],oruro:[['oruro-carnaval','Carnaval 1956']]};
   const PD=Object.entries(PDISENOS).flatMap(([dep,l])=>l.map(x=>({id:x[0],dep,n:x[1]}))).filter(x=>document.getElementById('p-'+x.id));
   const pdById=id=>PD.find(x=>x.id===id);
   const pdSel=id=>pdById(id)||PD[0];
-  /* Canguro: solo los departamentos con arte de serigrafÃ­a (disenos/arte). La polera y la gorra tienen sus propios diseÃ±os. */
+  /* Canguro: solo los departamentos con arte de serigrafía (disenos/arte). La polera y la gorra tienen sus propios diseños. */
   const DEPS=SOLO_CON_ARTE?DEPS_TODOS.filter(d=>hasArte(d.id)):DEPS_TODOS;
   const depById=id=>DEPS_TODOS.find(d=>d.id===id);
   const depUI=id=>DEPS.find(d=>d.id===id);
@@ -2050,18 +2050,18 @@ td:first-child{font-weight:600}
   /* Pecho del canguro: el nombre del departamento en letras (n-<id>). Pecho de la polera: siempre BRAVA (n-brava). */
   const nameId=id=>(hasNombre(id)?'n-':'c-')+id;
   const chestId=(prenda,id)=>prenda==='polera'&&hasNombre('brava')?'n-brava':nameId(id);
-  /* Gorra: tres diseÃ±os propios, BOLIVIA, BRAVA o el nombre del departamento. */
+  /* Gorra: tres diseños propios, BOLIVIA, BRAVA o el nombre del departamento. */
   const GL=['bolivia','brava','nombre'];
   const capId=(id,gl)=>gl==='nombre'&&hasNombre(id)?'n-'+id:(gl==='brava'&&hasNombre('brava')?'n-brava':(hasArte('bolivia')?'a-bolivia':'c-'+id));
   const backId=(id,prenda,pd)=>prenda==='polera'?'p-'+pdSel(pd).id:(hasArte(id)?'a-':'d-')+id;
   const gorraTxt=it=>it.gl==='nombre'?depById(it.dep).n.toUpperCase():(it.gl==='brava'?'BRAVA':'BOLIVIA');
-  /* Nombre del diseÃ±o elegido, segÃºn la prenda */
+  /* Nombre del diseño elegido, según la prenda */
   const disenoNombre=it=>it.prenda==='polera'?pdSel(it.pd).n:it.prenda==='gorra'?gorraTxt(it):depById(it.dep).n;
   const disenoOk=it=>it.prenda==='polera'?!!pdById(it.pd):it.prenda==='gorra'?(GL.includes(it.gl||'bolivia')&&!!depById(it.dep)):!!depUI(it.dep);
-  /* Espalda (canguro y polera): el mismo arte, todos con el mismo ANCHO de impresiÃ³n; los verticales (3:4) quedan mÃ¡s altos, sin deformarse.
+  /* Espalda (canguro y polera): el mismo arte, todos con el mismo ANCHO de impresión; los verticales (3:4) quedan más altos, sin deformarse.
      w = ancho del dibujo y top = borde superior, en unidades del dibujo de la prenda. El canguro arranca bajo la punta de la capucha. */
   const BACK_ARTE={canguro:{w:144,top:150},polera:{w:148,top:80}};
-  const BACK_ALTO_MAX=205;   // las lÃ¡minas a color son verticales: si quedan muy altas, se achican para no pasar el largo de la espalda
+  const BACK_ALTO_MAX=205;   // las láminas a color son verticales: si quedan muy altas, se achican para no pasar el largo de la espalda
   function backBox(id,prenda,pd){
     const p=PRENDAS[prenda].backp, c=BACK_ARTE[prenda];
     if(prenda==='polera'){
@@ -2070,7 +2070,7 @@ td:first-child{font-weight:600}
     }
     const im=hasArte(id)&&document.querySelector('#am-'+id+' image');
     if(!im) return p;
-    const ix=+im.getAttribute('x'), iy=+im.getAttribute('y'), cw=+im.getAttribute('width'), sc=c.w/cw;   // el sÃ­mbolo mide 400 Ã— 400
+    const ix=+im.getAttribute('x'), iy=+im.getAttribute('y'), cw=+im.getAttribute('width'), sc=c.w/cw;   // el símbolo mide 400 × 400
     return {x:200-(ix+cw/2)*sc,y:c.top-iy*sc,w:400*sc,h:400*sc};
   }
   let S={prenda:'canguro',color:'pacay',talla:'M',dep:'cochabamba',ub:'espalda',tintas:2,acc:'ocre',side:'back',gl:'bolivia',pd:null};
@@ -2101,9 +2101,9 @@ td:first-child{font-weight:600}
     if(st.tintas===2) rows.push(['Segunda tinta',TINTA2]);
     return rows;
   }
-  const ink1Name=st=>COL[st.color].dark?'Hueso':'CarbÃ³n';
+  const ink1Name=st=>COL[st.color].dark?'Hueso':'Carbón';
   const tintasTxt=st=>st.tintas===2?`2 (${ink1Name(st)} + ${ACC[st.acc].n})`:`1 (${ink1Name(st)})`;
-  /* Miniaturas (carrito, fichas): usan la mÃ¡scara chica del arte, para no reducir una imagen de 720 px a 40 px de golpe */
+  /* Miniaturas (carrito, fichas): usan la máscara chica del arte, para no reducir una imagen de 720 px a 40 px de golpe */
   const smallId=(id,small)=>small&&id.startsWith('a-')&&document.getElementById('s-'+id.slice(2))?'s-'+id.slice(2):id;
   function garmentSVG(st,side,small){const p=PRENDAS[st.prenda],v=inks(st);side=side||(st.prenda==='gorra'?'front':(st.ub==='pecho'?'front':'back'));let inner='<image href="'+IMG(st.prenda,side,st.color)+'" x="0" y="0" width="400" height="440"/>';const cut=inner.length;if(st.prenda==='gorra')inner+='<use href="#'+capId(st.dep,st.gl)+'" x="'+p.cap.x+'" y="'+p.cap.y+'" width="'+p.cap.w+'" height="'+p.cap.h+'"/>';else if(side==='back'){const bb=backBox(st.dep,st.prenda,st.pd);inner+='<use href="#'+smallId(backId(st.dep,st.prenda,st.pd),small)+'" x="'+bb.x+'" y="'+bb.y+'" width="'+bb.w+'" height="'+bb.h+'"/>'}else if(st.prenda==='polera'||st.ub==='pecho'||st.ub==='ambos')inner+='<use href="#'+chestId(st.prenda,st.dep)+'" x="'+p.chest.x+'" y="'+p.chest.y+'" width="'+p.chest.w+'" height="'+p.chest.h+'"/>';else inner+='<use href="#logo-stamp" x="'+(p.chest.x+2)+'" y="'+(p.chest.y-(Math.round(p.chest.h*1.45)-p.chest.h)/2)+'" width="'+Math.round(p.chest.h*1.45)+'" height="'+Math.round(p.chest.h*1.45)+'"/>';return '<svg viewBox="0 0 400 440" aria-hidden="true" style="'+varStr(v)+'">'+inner.slice(0,cut)+(small?'<g>':'<g filter="url(#tela-'+p.img+'-'+(side==='back'?'espalda':'frente')+')">')+inner.slice(cut)+'</g></svg>';}
   const designSVG=(id,v)=>'<svg viewBox="0 0 400 400" aria-hidden="true" style="'+varStr(v)+'"><use href="#'+cardId(id)+'"/></svg>';
@@ -2160,7 +2160,7 @@ td:first-child{font-weight:600}
   document.addEventListener('click',e=>{const q=e.target.closest('[data-usepd]');if(q){S.prenda='polera';S.pd=q.dataset.usepd;if(S.ub==='pecho')S.ub='espalda';normalize();S.side='back';go('personaliza');return;}});
   document.addEventListener('click',e=>{const f=e.target.closest('[data-ficha]');if(f){go('departamento-'+f.dataset.ficha);return;}const u=e.target.closest('[data-use]');if(u)useDep(u.dataset.use,u.dataset.prenda);});
   function useDep(id,prenda){prenda=prenda||'canguro';S.dep=id;if(prenda==='gorra') S.gl='nombre';S.prenda=prenda;normalize();S.side=PRENDAS[S.prenda].back&&S.ub!=='pecho'?'back':'front';go('personaliza');}
-  function renderFicha(id){const d=depById(id),v=previewVars,minis=[{prenda:'canguro',color:'pacay',ub:'espalda',label:'Canguro'},{prenda:'gorra',color:'negro',ub:'frente',gl:'nombre',label:'Gorra'}].map(m=>'<button class="mini" data-use="'+d.id+'" data-prenda="'+m.prenda+'">'+garmentSVG({...m,dep:d.id,tintas:2,acc:'ocre'},null,true)+'<b>'+m.label+'</b></button>').join(''),ix=DEPS.indexOf(d),o=DEPS.filter(x=>x.id!==d.id).sort((a,b)=>Math.abs(DEPS.indexOf(a)-ix)-Math.abs(DEPS.indexOf(b)-ix)).slice(0,2);$('#ficha').innerHTML='<p class="crumb"><a href="#departamentos">Departamentos</a> / '+d.n+'</p><div class="ficha"><div class="ficha-art">'+designSVG(d.id,v)+'</div><div class="ficha-info"><h1>'+d.n+'</h1><h2>QuÃ© hay en este diseÃ±o</h2><ul class="contains">'+d.contiene.map(x=>'<li>'+x+'</li>').join('')+'</ul><p class="caps">AsÃ­ queda en cada prenda</p><div class="minis">'+minis+'</div><dl class="specs"><dt>Espalda</dt><dd>30 Ã— 30 cm</dd><dt>Pecho y gorra</dt><dd>10 Ã— 6 cm</dd></dl><button class="btn btn-ink" data-use="'+d.id+'">Usar este diseÃ±o</button><p>Otros departamentos: '+o.map(x=>'<a class="link" href="#departamento-'+x.id+'">'+x.n+'</a>').join(' Â· ')+'</p></div></div>';}
+  function renderFicha(id){const d=depById(id),v=previewVars,minis=[{prenda:'canguro',color:'pacay',ub:'espalda',label:'Canguro'},{prenda:'gorra',color:'negro',ub:'frente',gl:'nombre',label:'Gorra'}].map(m=>'<button class="mini" data-use="'+d.id+'" data-prenda="'+m.prenda+'">'+garmentSVG({...m,dep:d.id,tintas:2,acc:'ocre'},null,true)+'<b>'+m.label+'</b></button>').join(''),ix=DEPS.indexOf(d),o=DEPS.filter(x=>x.id!==d.id).sort((a,b)=>Math.abs(DEPS.indexOf(a)-ix)-Math.abs(DEPS.indexOf(b)-ix)).slice(0,2);$('#ficha').innerHTML='<p class="crumb"><a href="#departamentos">Departamentos</a> / '+d.n+'</p><div class="ficha"><div class="ficha-art">'+designSVG(d.id,v)+'</div><div class="ficha-info"><h1>'+d.n+'</h1><h2>Qué hay en este diseño</h2><ul class="contains">'+d.contiene.map(x=>'<li>'+x+'</li>').join('')+'</ul><p class="caps">Así queda en cada prenda</p><div class="minis">'+minis+'</div><dl class="specs"><dt>Espalda</dt><dd>30 × 30 cm</dd><dt>Pecho y gorra</dt><dd>10 × 6 cm</dd></dl><button class="btn btn-ink" data-use="'+d.id+'">Usar este diseño</button><p>Otros departamentos: '+o.map(x=>'<a class="link" href="#departamento-'+x.id+'">'+x.n+'</a>').join(' · ')+'</p></div></div>';}
   /* ---------- Personalizador ---------- */
   const miniFoto=k=>`<svg viewBox="0 0 400 440" aria-hidden="true"><image href="${IMG(k,'front',S.color)}" width="400" height="440"/></svg>`;
   const mini=(sym,vb)=>`<svg viewBox="${vb||'0 0 400 440'}" aria-hidden="true"><use href="#${sym}"/></svg>`;
@@ -2186,10 +2186,10 @@ td:first-child{font-weight:600}
     $('#o-prenda').innerHTML=Object.entries(PRENDAS).map(([k,v])=>radio('prenda',k,`${miniFoto(k)}<b>${v.n}</b><small>desde ${BS(v.base)}</small>`,'o-prenda',S.prenda===k)).join('');
     $('#o-color').innerHTML=p.colores.map(c=>radio('color',c,`<span class="dot" style="background:${COL[c].hex}"></span>${COL[c].n}`,'o-sw',S.color===c)).join('');
     $('#o-talla').innerHTML=p.tallas.map(t=>radio('talla',t,t,'o-talla',S.talla===t)).join('');
-    /* Paso 4: cada prenda tiene su propio catÃ¡logo de diseÃ±os */
+    /* Paso 4: cada prenda tiene su propio catálogo de diseños */
     const pol=S.prenda==='polera', gor=S.prenda==='gorra';
-    $('#t-dep').textContent=pol?'DiseÃ±o de la polera':gor?'DiseÃ±o de la gorra':'Departamento';
-    $('#o-dep').setAttribute('aria-label',pol?'DiseÃ±os de polera':gor?'DiseÃ±os de gorra':'Departamentos');
+    $('#t-dep').textContent=pol?'Diseño de la polera':gor?'Diseño de la gorra':'Departamento';
+    $('#o-dep').setAttribute('aria-label',pol?'Diseños de polera':gor?'Diseños de gorra':'Departamentos');
     if(pol) $('#o-dep').innerHTML=PD.map(x=>radio('pd',x.id,'<svg viewBox="0 0 400 400"><use href="#p-'+x.id+'"/></svg><b>'+x.n+'</b>','o-dep',S.pd===x.id)).join('');
     else if(gor) $('#o-dep').innerHTML=[['bolivia','BOLIVIA','a-bolivia'],['brava','BRAVA','n-brava'],['nombre','Departamento',hasNombre(S.dep)?'n-'+S.dep:'n-cochabamba']].map(o=>radio('gl',o[0],'<svg viewBox="0 0 400 400"><use href="#'+o[2]+'"/></svg><b>'+o[1]+'</b>','o-dep',S.gl===o[0],!document.getElementById(o[2]))).join('');
     else $('#o-dep').innerHTML=DEPS.map(d=>radio('dep',d.id,'<svg viewBox="0 0 400 400"><use href="#'+cardId(d.id)+'"/></svg><b>'+d.n+'</b>','o-dep',S.dep===d.id)).join('');
@@ -2293,7 +2293,7 @@ td:first-child{font-weight:600}
     $('#view-back').disabled=!p.back;
     const name=`${p.n} ${COL[S.color].n.toLowerCase()}`;
     $('#stage-name').textContent=name;
-    const desc=`${name}, vista de ${side==='back'?'espalda':'frente'}, diseÃ±o ${disenoNombre(S)}`;
+    const desc=`${name}, vista de ${side==='back'?'espalda':'frente'}, diseño ${disenoNombre(S)}`;
     stage.setAttribute('aria-label',desc); $('#stage-desc').textContent=desc;
     $('#stage-foot').innerHTML=
       `<span class="chip"><i style="background:${v.garment}"></i>${COL[S.color].n}</span>`+
@@ -2314,12 +2314,12 @@ td:first-child{font-weight:600}
     T('#v-ub',UB[S.ub].n);
     T('#v-tin',S.tintas===2?ink1Name(S)+' y '+ACC[S.acc].n:ink1Name(S));
     T('#tk-prenda',`${p.n} ${c.n.toLowerCase()}, talla ${S.talla}`);
-    T('#tk-dep-l',S.prenda==='canguro'?'Departamento':'DiseÃ±o');
+    T('#tk-dep-l',S.prenda==='canguro'?'Departamento':'Diseño');
     T('#tk-dep',disenoNombre(S));
     T('#tk-pos',UB[S.ub].n+(UB[S.ub].logo?(S.prenda==='polera'?', con BRAVA al frente':', con logo chico en el pecho'):''));
     T('#tk-med',UB[S.ub].med);
     T('#tk-tin',tintasTxt(S)+(S.tintas===2?', 2 pantallas':''));
-    T('#tk-tec',S.prenda==='gorra'?'Transfer serigrÃ¡fico, a confirmar con el taller':'SerigrafÃ­a');
+    T('#tk-tec',S.prenda==='gorra'?'Transfer serigráfico, a confirmar con el taller':'Serigrafía');
     $('#tk-sum').innerHTML=priceRows(S).map(r=>`<div><span>${r[0]}</span><span>${BS(r[1])}</span></div>`).join('');
     T('#tk-total',BS(total));
     $('#add').textContent='Agregar al pedido, '+BS(total);
@@ -2357,7 +2357,7 @@ td:first-child{font-weight:600}
     const same=cart.find(it=>['prenda','color','talla','ub','tintas','acc'].every(k=>it[k]===S[k])&&(it.pd||null)===pd&&(it.gl||null)===gl&&(S.prenda==='polera'||(S.prenda==='gorra'&&gl!=='nombre')||it.dep===dep));
     if(same) same.qty++; else cart.push({prenda:S.prenda,color:S.color,talla:S.talla,dep,ub:S.ub,tintas:S.tintas,acc:S.acc,gl,pd,qty:1});
     P.pagado=false; persist(); renderCart();
-    openCart();   // se ve de inmediato quÃ© quedÃ³ en el pedido
+    openCart();   // se ve de inmediato qué quedó en el pedido
   }
   $('#cz').addEventListener('submit',e=>{ e.preventDefault(); addCurrent(); });
   $('#mbar-add').addEventListener('click',addCurrent);
@@ -2371,7 +2371,7 @@ td:first-child{font-weight:600}
   $('#toast-go').addEventListener('click',()=>{ $('#toast').dataset.show='false'; P.step=1; go('pedido'); });
   $('#toast-more').addEventListener('click',()=>{ $('#toast').dataset.show='false'; });
 
-  /* ---------- Pedido: cÃ¡lculo ---------- */
+  /* ---------- Pedido: cálculo ---------- */
   const count=()=>cart.reduce((a,i)=>a+i.qty,0);
   const subtotal=()=>cart.reduce((a,i)=>a+unitPrice(i)*i.qty,0);
   const deliveryCost=()=>P.entrega==='delivery'?CONFIG.delivery:0;
@@ -2384,19 +2384,19 @@ td:first-child{font-weight:600}
     return `BR-${dd}-${r}`;
   }
   function itemLine(it){ return `${PRENDAS[it.prenda].n} ${COL[it.color].n.toLowerCase()}, talla ${it.talla}`; }
-  function itemDetail(it){return `${it.prenda==='canguro'?'Departamento':'DiseÃ±o'}: ${disenoNombre(it)}, ${UB[it.ub].n.toLowerCase()}${it.prenda==='polera'?' + BRAVA al frente':''}, ${it.tintas===1?'1 tinta':'2 tintas'}`;}
+  function itemDetail(it){return `${it.prenda==='canguro'?'Departamento':'Diseño'}: ${disenoNombre(it)}, ${UB[it.ub].n.toLowerCase()}${it.prenda==='polera'?' + BRAVA al frente':''}, ${it.tintas===1?'1 tinta':'2 tintas'}`;}
   function buildMessage(){
     const lines=cart.map((it,k)=>{
-      const badge=it.prenda==='gorra'?`Texto Â«${gorraTxt(it)}Â»`:it.prenda==='polera'?(it.ub==='pecho'?'Solo Â«BRAVAÂ» al frente':`LÃ¡mina Â«${pdSel(it.pd).n}Â»`):(it.ub==='pecho'?`Nombre Â«${depById(it.dep).n.toUpperCase()}Â»`:'Cuadrado de dibujos');
-      let s=`${k+1}) ${PRENDAS[it.prenda].n} Â· ${COL[it.color].n} Â· Talla ${it.talla}\n   ${it.prenda==='canguro'?'Departamento: '+depById(it.dep).n+'\n   ':''}DiseÃ±o: ${badge}\n   UbicaciÃ³n: ${UB[it.ub].n} (${UB[it.ub].med})${UB[it.ub].logo?(it.prenda==='polera'?' + Â«BRAVAÂ» al frente':' + logo chico en pecho'):''}`;
-      s+=`\n   Tintas: ${tintasTxt(it)}\n   Cantidad: ${it.qty} Ã— ${BS(unitPrice(it))} = ${BS(unitPrice(it)*it.qty)}`;
+      const badge=it.prenda==='gorra'?`Texto «${gorraTxt(it)}»`:it.prenda==='polera'?(it.ub==='pecho'?'Solo «BRAVA» al frente':`Lámina «${pdSel(it.pd).n}»`):(it.ub==='pecho'?`Nombre «${depById(it.dep).n.toUpperCase()}»`:'Cuadrado de dibujos');
+      let s=`${k+1}) ${PRENDAS[it.prenda].n} · ${COL[it.color].n} · Talla ${it.talla}\n   ${it.prenda==='canguro'?'Departamento: '+depById(it.dep).n+'\n   ':''}Diseño: ${badge}\n   Ubicación: ${UB[it.ub].n} (${UB[it.ub].med})${UB[it.ub].logo?(it.prenda==='polera'?' + «BRAVA» al frente':' + logo chico en pecho'):''}`;
+      s+=`\n   Tintas: ${tintasTxt(it)}\n   Cantidad: ${it.qty} × ${BS(unitPrice(it))} = ${BS(unitPrice(it)*it.qty)}`;
       return s;
     });
-    const ent=P.entrega==='delivery'?`Delivery Â· Zona ${P.zona||'(sin zona)'}${P.ref?' Â· Ref.: '+P.ref:''} Â· ${BS(CONFIG.delivery)}`:'Recojo en el taller Â· Bs 0';
+    const ent=P.entrega==='delivery'?`Delivery · Zona ${P.zona||'(sin zona)'}${P.ref?' · Ref.: '+P.ref:''} · ${BS(CONFIG.delivery)}`:'Recojo en el taller · Bs 0';
     return `Hola BRAVA, quiero confirmar mi pedido ${P.code}.\n\n${lines.join('\n\n')}\n\nSubtotal: ${BS(subtotal())}\nEntrega: ${ent}\nTOTAL PAGADO: ${BS(total())} por QR\n\nNombre: ${P.nombre}\nCelular: ${P.cel}\n\nAdjunto el comprobante de pago.`;
   }
 
-  /* ---------- Pedido: panel lateral y botÃ³n flotante ---------- */
+  /* ---------- Pedido: panel lateral y botón flotante ---------- */
   const drawer=$('#drawer'), scrim=$('#scrim');
   let lastFocus=null;
   function openCart(){ lastFocus=document.activeElement; renderCart(); drawer.hidden=false; scrim.hidden=false; $('#close-cart').focus(); }
@@ -2417,7 +2417,7 @@ td:first-child{font-weight:600}
   function renderCart(){
     const n=count();
     $('#cart-count').textContent=n; $('#fab-n').textContent=n; $('#fab-t').textContent=BS(total());
-    $('#dr-items').innerHTML=n?cart.map((it,k)=>itemRow(it,k,true)).join(''):`<div class="empty" style="margin-top:16px"><h2>Pedido vacÃ­o</h2><p>TodavÃ­a no agregaste prendas.</p><button class="btn btn-ink btn-sm" type="button" data-go="personaliza">Armar la primera</button></div>`;
+    $('#dr-items').innerHTML=n?cart.map((it,k)=>itemRow(it,k,true)).join(''):`<div class="empty" style="margin-top:16px"><h2>Pedido vacío</h2><p>Todavía no agregaste prendas.</p><button class="btn btn-ink btn-sm" type="button" data-go="personaliza">Armar la primera</button></div>`;
     $('#dr-foot').innerHTML=n?`<div class="tot"><span class="caps">Subtotal</span><strong class="num">${BS(subtotal())}</strong></div><button class="btn btn-ink" type="button" data-go="pedido">Ir a pagar</button><button class="btn btn-line" type="button" data-go="personaliza">Seguir armando</button>`:'';
     syncChrome();
   }
@@ -2432,26 +2432,26 @@ td:first-child{font-weight:600}
     $('#fab').hidden=count()===0||['pedido','enviado','personaliza','planos'].includes(r);
   }
 
-  /* Atajo para ver el paso del QR sin armar un pedido: si el pedido estÃ¡ vacÃ­o, carga una prenda de ejemplo */
+  /* Atajo para ver el paso del QR sin armar un pedido: si el pedido está vacío, carga una prenda de ejemplo */
   document.addEventListener('click',e=>{
     if(!e.target.closest('[data-qr-demo]')) return;
-    if(!cart.length){ cart.push({prenda:'canguro',color:'pacay',talla:'M',dep:'cochabamba',ub:'espalda',tintas:2,acc:'ocre',gl:null,pd:null,qty:1}); toast('Cargamos un canguro de ejemplo para que veas el pago. Lo podÃ©s quitar en el pedido.'); }
+    if(!cart.length){ cart.push({prenda:'canguro',color:'pacay',talla:'M',dep:'cochabamba',ub:'espalda',tintas:2,acc:'ocre',gl:null,pd:null,qty:1}); toast('Cargamos un canguro de ejemplo para que veas el pago. Lo podés quitar en el pedido.'); }
     P.step=3; persist(); renderCart(); go('pedido');
   });
 
-  /* ---------- Pedido: pÃ¡gina en 4 pasos ---------- */
+  /* ---------- Pedido: página en 4 pasos ---------- */
   const STEPS=['Resumen','Datos y entrega','Pago','Enviar'];
   function renderPedido(focusId){
     const root=$('#pedido-root');
     if(!cart.length){
-      root.innerHTML=`<div class="empty" style="margin-bottom:80px"><h2>Tu pedido estÃ¡ vacÃ­o</h2><p>ArmÃ¡ una prenda en el personalizador y agregala al pedido.</p><button class="btn btn-ink" type="button" data-go="personaliza">PersonalizÃ¡ tu prenda</button> <button class="btn btn-line" type="button" data-qr-demo>Ver el QR de ejemplo</button></div>`;
+      root.innerHTML=`<div class="empty" style="margin-bottom:80px"><h2>Tu pedido está vacío</h2><p>Armá una prenda en el personalizador y agregala al pedido.</p><button class="btn btn-ink" type="button" data-go="personaliza">Personalizá tu prenda</button> <button class="btn btn-line" type="button" data-qr-demo>Ver el QR de ejemplo</button></div>`;
       return;
     }
     if(P.step>=3&&!P.code){ P.code=newCode(); persist(); }
     const stepper=`<ol class="stepper">${STEPS.map((s,i)=>`<li${i+1===P.step?' aria-current="step"':''} data-state="${i+1<P.step?'done':'todo'}"><span>${s}</span></li>`).join('')}</ol>`;
     let body='';
     if(P.step===1){
-      body=`<h2 class="panel-h">Resumen</h2><p class="panel-p">RevisÃ¡ cada prenda. PodÃ©s cambiar la cantidad, editarla o quitarla.</p>
+      body=`<h2 class="panel-h">Resumen</h2><p class="panel-p">Revisá cada prenda. Podés cambiar la cantidad, editarla o quitarla.</p>
         <div class="items">${cart.map((it,k)=>itemRow(it,k,true)).join('')}</div>
         <div class="actions"><button class="btn btn-line" type="button" data-go="personaliza">${ico('plus')}Agregar otra prenda</button><button class="btn btn-ink" type="button" data-step="2">Continuar${ico('arrow')}</button></div>`;
     } else if(P.step===2){
@@ -2465,9 +2465,9 @@ td:first-child{font-weight:600}
               ${radio('entrega','delivery','<span>Delivery en Cochabamba</span><span class="num">'+BS(CONFIG.delivery)+' <span class="ex">(ejemplo)</span></span>','',P.entrega==='delivery')}
             </div>
           </fieldset>
-          ${P.entrega==='delivery'?`<div class="field"><label for="p-zona">Zona</label><select id="p-zona"><option value="">ElegÃ­ tu zona</option>${CONFIG.zonas.map(z=>`<option${P.zona===z?' selected':''}>${z}</option>`).join('')}</select><span class="err" id="p-zona-err" hidden></span></div>
-          <div class="field"><label for="p-ref">Referencia</label><input id="p-ref" type="text" value="${esc(P.ref)}" placeholder="Calle, nÃºmero y algo que se vea desde afuera"></div>`:''}
-          <div class="actions"><button class="btn btn-line" type="button" data-step="1">${ico('back')}AtrÃ¡s</button><button class="btn btn-ink" type="submit">Continuar${ico('arrow')}</button></div>
+          ${P.entrega==='delivery'?`<div class="field"><label for="p-zona">Zona</label><select id="p-zona"><option value="">Elegí tu zona</option>${CONFIG.zonas.map(z=>`<option${P.zona===z?' selected':''}>${z}</option>`).join('')}</select><span class="err" id="p-zona-err" hidden></span></div>
+          <div class="field"><label for="p-ref">Referencia</label><input id="p-ref" type="text" value="${esc(P.ref)}" placeholder="Calle, número y algo que se vea desde afuera"></div>`:''}
+          <div class="actions"><button class="btn btn-line" type="button" data-step="1">${ico('back')}Atrás</button><button class="btn btn-ink" type="submit">Continuar${ico('arrow')}</button></div>
         </form>`;
     } else if(P.step===3){
       const pointer=window.matchMedia&&window.matchMedia('(pointer:coarse)').matches;
@@ -2476,29 +2476,29 @@ td:first-child{font-weight:600}
           <div>
             <div class="amount"><small>Monto exacto a pagar</small><strong>${BS(total())}</strong>
               <div class="row"><button class="btn btn-sm" type="button" data-copy="${total()}" data-copy-label="Monto copiado">${ico('copy')}Copiar monto</button></div></div>
-            <div class="codebox"><span>CÃ³digo del pedido. Escribilo en la glosa o referencia de la transferencia.</span><strong>${P.code}</strong><button class="link" type="button" data-copy="${P.code}" data-copy-label="CÃ³digo copiado" style="justify-self:start">Copiar cÃ³digo</button></div>
+            <div class="codebox"><span>Código del pedido. Escribilo en la glosa o referencia de la transferencia.</span><strong>${P.code}</strong><button class="link" type="button" data-copy="${P.code}" data-copy-label="Código copiado" style="justify-self:start">Copiar código</button></div>
           </div>
           <div>
             <div class="qrcard">${qrSVG(P.code)}<p>QR de ejemplo, no sirve para pagar.<br>Titular: por definir. Banco: por definir.</p>
               <button class="btn btn-ink btn-sm" type="button" id="save-qr">${ico('download')}Guardar QR</button></div>
             <div class="howpay">
-              <div class="seg" role="group" aria-label="Desde dÃ³nde pagÃ¡s"><button type="button" data-dev="cel" aria-pressed="${pointer}">En el celular</button><button type="button" data-dev="pc" aria-pressed="${!pointer}">En la compu</button></div>
-              <ol id="howpay-cel"${pointer?'':' hidden'}><li>TocÃ¡ Â«Guardar QRÂ».</li><li>AbrÃ­ la app de tu banco y entrÃ¡ a Pagar con QR.</li><li>ElegÃ­ la imagen desde tu galerÃ­a.</li><li>EscribÃ­ ${BS(total())} y el cÃ³digo ${P.code}.</li></ol>
-              <ol id="howpay-pc"${pointer?' hidden':''}><li>AbrÃ­ la app de tu banco en el celular.</li><li>EscaneÃ¡ este QR.</li><li>EscribÃ­ ${BS(total())} y el cÃ³digo ${P.code}.</li></ol>
+              <div class="seg" role="group" aria-label="Desde dónde pagás"><button type="button" data-dev="cel" aria-pressed="${pointer}">En el celular</button><button type="button" data-dev="pc" aria-pressed="${!pointer}">En la compu</button></div>
+              <ol id="howpay-cel"${pointer?'':' hidden'}><li>Tocá «Guardar QR».</li><li>Abrí la app de tu banco y entrá a Pagar con QR.</li><li>Elegí la imagen desde tu galería.</li><li>Escribí ${BS(total())} y el código ${P.code}.</li></ol>
+              <ol id="howpay-pc"${pointer?' hidden':''}><li>Abrí la app de tu banco en el celular.</li><li>Escaneá este QR.</li><li>Escribí ${BS(total())} y el código ${P.code}.</li></ol>
             </div>
           </div>
         </div>
-        <label class="check" for="p-pagado"><input type="checkbox" id="p-pagado"${P.pagado?' checked':''}><span>Ya paguÃ© ${BS(total())} con el cÃ³digo ${P.code}</span></label>
+        <label class="check" for="p-pagado"><input type="checkbox" id="p-pagado"${P.pagado?' checked':''}><span>Ya pagué ${BS(total())} con el código ${P.code}</span></label>
         <p class="hint" id="save-out" hidden style="margin-top:10px"></p>
-        <div class="actions"><button class="btn btn-line" type="button" data-step="2">${ico('back')}AtrÃ¡s</button><button class="btn btn-ink" type="button" data-step="4" id="to-4"${P.pagado?'':' disabled'}>Continuar${ico('arrow')}</button></div>`;
+        <div class="actions"><button class="btn btn-line" type="button" data-step="2">${ico('back')}Atrás</button><button class="btn btn-ink" type="button" data-step="4" id="to-4"${P.pagado?'':' disabled'}>Continuar${ico('arrow')}</button></div>`;
     } else {
       body=`<h2 class="panel-h">Enviar por WhatsApp</h2>
-        <div class="notice">${ico('alert')}<span>Antes de enviar, tenÃ© a mano la captura del comprobante: la adjuntÃ¡s en el mismo chat.</span></div>
+        <div class="notice">${ico('alert')}<span>Antes de enviar, tené a mano la captura del comprobante: la adjuntás en el mismo chat.</span></div>
         <p class="panel-p">Este mensaje sale escrito con todo tu pedido. No hace falta cambiar nada.</p>
         <pre class="preview" id="wa-msg">${esc(buildMessage())}</pre>
-        <div class="actions"><button class="btn btn-line" type="button" data-step="3">${ico('back')}AtrÃ¡s</button>
+        <div class="actions"><button class="btn btn-line" type="button" data-step="3">${ico('back')}Atrás</button>
           <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-line" type="button" data-copy-msg>${ico('copy')}Copiar mensaje</button><button class="btn btn-ink" type="button" id="send-wa">${ico('chat')}Enviar pedido por WhatsApp</button></div></div>
-        <p class="hint" style="margin-top:12px">En el prototipo no se abre WhatsApp porque el nÃºmero es de ejemplo. En la web real, el botÃ³n abre el chat del taller con este texto.</p>
+        <p class="hint" style="margin-top:12px">En el prototipo no se abre WhatsApp porque el número es de ejemplo. En la web real, el botón abre el chat del taller con este texto.</p>
         <p class="hint" id="copy-out" hidden></p>`;
     }
     root.innerHTML=`<div class="pedido"><div>${stepper}${body}</div>${summaryHTML()}</div>`;
@@ -2506,10 +2506,10 @@ td:first-child{font-weight:600}
   }
   function summaryHTML(){
     return `<aside class="summary" aria-label="Resumen del pedido"><h2>Resumen</h2>
-      <ul>${cart.map(it=>`<li><span>${it.qty} Ã— ${PRENDAS[it.prenda].n} ${disenoNombre(it).toLowerCase()}</span><span>${BS(unitPrice(it)*it.qty)}</span></li>`).join('')}
+      <ul>${cart.map(it=>`<li><span>${it.qty} × ${PRENDAS[it.prenda].n} ${disenoNombre(it).toLowerCase()}</span><span>${BS(unitPrice(it)*it.qty)}</span></li>`).join('')}
       <li><span>Entrega${P.entrega==='delivery'?' (delivery)':' (recojo)'}</span><span>${BS(deliveryCost())}</span></li></ul>
       <div class="tot"><span class="caps">Total</span><strong>${BS(total())}</strong></div>
-      ${P.code?`<span class="code">CÃ³digo ${P.code}</span>`:''}</aside>`;
+      ${P.code?`<span class="code">Código ${P.code}</span>`:''}</aside>`;
   }
   function esc(s){ return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
@@ -2522,10 +2522,10 @@ td:first-child{font-weight:600}
   function validateDatos(){
     let first=null;
     const nOk=P.nombre.trim().length>=2;
-    setErr('p-nombre',nOk?'':'EscribÃ­ tu nombre para que el taller identifique el pedido.'); if(!nOk) first=first||'p-nombre';
+    setErr('p-nombre',nOk?'':'Escribí tu nombre para que el taller identifique el pedido.'); if(!nOk) first=first||'p-nombre';
     const cOk=/^[67]\d{7}$/.test(P.cel.replace(/\s/g,''));
-    setErr('p-cel',cOk?'':'EscribÃ­ un celular de 8 dÃ­gitos que empiece con 6 o 7, por ejemplo 70012345.'); if(!cOk) first=first||'p-cel';
-    if(P.entrega==='delivery'){ const zOk=!!P.zona; setErr('p-zona',zOk?'':'ElegÃ­ tu zona para calcular la entrega.'); if(!zOk) first=first||'p-zona'; }
+    setErr('p-cel',cOk?'':'Escribí un celular de 8 dígitos que empiece con 6 o 7, por ejemplo 70012345.'); if(!cOk) first=first||'p-cel';
+    if(P.entrega==='delivery'){ const zOk=!!P.zona; setErr('p-zona',zOk?'':'Elegí tu zona para calcular la entrega.'); if(!zOk) first=first||'p-zona'; }
     if(first) $('#'+first).focus();
     return !first;
   }
@@ -2536,7 +2536,7 @@ td:first-child{font-weight:600}
     const rm=e.target.closest('[data-rm]');
     if(rm){ cart.splice(+rm.dataset.rm,1); P.pagado=false; persist(); renderPedido(); renderCart(); return true; }
     const ed=e.target.closest('[data-edit]');
-    if(ed){ if(!drawer.hidden) closeCart(); const it=cart.splice(+ed.dataset.edit,1)[0]; P.pagado=false; P.step=1; Object.assign(S,it); S.side=it.ub==='pecho'||it.prenda==='gorra'?'front':'back'; persist(); renderCart(); go('personaliza'); toast('Editando la prenda. CambiÃ¡ lo que quieras y agregala de nuevo.'); return true; }
+    if(ed){ if(!drawer.hidden) closeCart(); const it=cart.splice(+ed.dataset.edit,1)[0]; P.pagado=false; P.step=1; Object.assign(S,it); S.side=it.ub==='pecho'||it.prenda==='gorra'?'front':'back'; persist(); renderCart(); go('personaliza'); toast('Editando la prenda. Cambiá lo que quieras y agregala de nuevo.'); return true; }
     return false;
   }
   $('#dr-items').addEventListener('click',itemTools);
@@ -2576,13 +2576,13 @@ td:first-child{font-weight:600}
       const params=new URLSearchParams(location.search),src=[params.get('utm_source'),document.referrer].filter(Boolean).join(' ').toLowerCase();
       const canal=src.includes('instagram')?'Instagram':src.includes('tiktok')?'TikTok':src.includes('whatsapp')?'WhatsApp referido':'Web directa';
       try{
-        if(typeof window.registrarPedido!=='function') throw new Error('No se pudo iniciar el registro del pedido. RecargÃ¡ la pÃ¡gina e intentÃ¡ de nuevo.');
-        await window.registrarPedido({codigo:P.code,nombre:P.nombre,telefono:String(P.cel||'').replace(/^\+?591\s*/, '').replace(/\D/g,''),entrega:P.entrega,zona:P.zona,referencia:P.ref,pagado:!!P.pagado,canal,items:cart.map(it=>({prenda:it.prenda,color:it.color,talla:it.talla==='Ãšnica'?'U':it.talla,diseno:it.prenda==='gorra'?gorraTxt(it):it.prenda==='polera'?(it.ub==='pecho'?'BRAVA':pdSel(it.pd).n):depById(it.dep).n,departamento:it.prenda==='canguro'?it.dep:null,ubicacion:it.ub,tintas:it.tintas,cantidad:it.qty}))});
+        if(typeof window.registrarPedido!=='function') throw new Error('No se pudo iniciar el registro del pedido. Recargá la página e intentá de nuevo.');
+        await window.registrarPedido({codigo:P.code,nombre:P.nombre,telefono:String(P.cel||'').replace(/^\+?591\s*/, '').replace(/\D/g,''),entrega:P.entrega,zona:P.zona,referencia:P.ref,pagado:!!P.pagado,canal,items:cart.map(it=>({prenda:it.prenda,color:it.color,talla:it.talla==='Única'?'U':it.talla,diseno:it.prenda==='gorra'?gorraTxt(it):it.prenda==='polera'?(it.ub==='pecho'?'BRAVA':pdSel(it.pd).n):depById(it.dep).n,departamento:it.prenda==='canguro'?it.dep:null,ubicacion:it.ub,tintas:it.tintas,cantidad:it.qty}))});
       }catch(error){
         console.error('BRAVA: no se pudo registrar el pedido.',error);
         sendButton.disabled=false;
         const hint=pr.querySelector('#copy-out');
-        if(hint){hint.hidden=false;hint.textContent=`No se confirmÃ³ el registro en Supabase. Tu pedido sigue guardado en esta pÃ¡gina. ${error.message||'RevisÃ¡ la conexiÃ³n e intentÃ¡ de nuevo.'}`;}
+        if(hint){hint.hidden=false;hint.textContent=`No se confirmó el registro en Supabase. Tu pedido sigue guardado en esta página. ${error.message||'Revisá la conexión e intentá de nuevo.'}`;}
         return;
       }
       lastOrder={code:P.code,msg:buildMessage(),total:total(),n:count()};
@@ -2603,7 +2603,7 @@ td:first-child{font-weight:600}
       }catch(e){ return false; }
     };
     const fail=()=>{
-      if(selectEl){ const r=document.createRange(); r.selectNodeContents(selectEl); const s=getSelection(); s.removeAllRanges(); s.addRange(r); toast('QuedÃ³ seleccionado: mantenÃ© apretado y tocÃ¡ Copiar.'); }
+      if(selectEl){ const r=document.createRange(); r.selectNodeContents(selectEl); const s=getSelection(); s.removeAllRanges(); s.addRange(r); toast('Quedó seleccionado: mantené apretado y tocá Copiar.'); }
       else toast('No se pudo copiar. Copialo a mano: '+txt);
     };
     const viaLegacy=()=>legacy()?ok&&ok():fail();
@@ -2611,7 +2611,7 @@ td:first-child{font-weight:600}
     else viaLegacy();
   }
 
-  /* QR de ejemplo: patrÃ³n al azar con las tres esquinas de un QR, no codifica nada */
+  /* QR de ejemplo: patrón al azar con las tres esquinas de un QR, no codifica nada */
   function qrSVG(seed){
     const N=29; let h=0; for(const c of String(seed)) h=(h*31+c.charCodeAt(0))>>>0;
     const rnd=()=>{ h=(h*1664525+1013904223)>>>0; return h/4294967296; };
@@ -2623,7 +2623,7 @@ td:first-child{font-weight:600}
       if(rnd()>.52) d+=`M${x} ${y}h1v1h-1z`;
     }
     const f=(x,y)=>`<rect x="${x}" y="${y}" width="7" height="7" fill="#1A1917"/><rect x="${x+1}" y="${y+1}" width="5" height="5" fill="#FBFAF7"/><rect x="${x+2}" y="${y+2}" width="3" height="3" fill="#1A1917"/>`;
-    return `<svg viewBox="-2 -2 33 33" role="img" aria-label="CÃ³digo QR de ejemplo"><rect x="-2" y="-2" width="33" height="33" fill="#FBFAF7"/><path d="${d}" fill="#1A1917"/>${f(0,0)}${f(N-7,0)}${f(0,N-7)}<rect x="10.5" y="12.5" width="8" height="4" rx=".6" fill="#FBFAF7" stroke="#1A1917" stroke-width=".25"/><text x="14.5" y="15.3" text-anchor="middle" font-size="2" font-family="Archivo, sans-serif" font-weight="800" fill="#1A1917">EJEMPLO</text></svg>`;
+    return `<svg viewBox="-2 -2 33 33" role="img" aria-label="Código QR de ejemplo"><rect x="-2" y="-2" width="33" height="33" fill="#FBFAF7"/><path d="${d}" fill="#1A1917"/>${f(0,0)}${f(N-7,0)}${f(0,N-7)}<rect x="10.5" y="12.5" width="8" height="4" rx=".6" fill="#FBFAF7" stroke="#1A1917" stroke-width=".25"/><text x="14.5" y="15.3" text-anchor="middle" font-size="2" font-family="Archivo, sans-serif" font-weight="800" fill="#1A1917">EJEMPLO</text></svg>`;
   }
   function saveQR(){
     const out=$('#save-out'); out.hidden=false;
@@ -2632,28 +2632,28 @@ td:first-child{font-weight:600}
       const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'}));
       const a=document.createElement('a'); a.href=url; a.download=`qr-brava-${P.code}.svg`; document.body.appendChild(a); a.click(); a.remove();
       setTimeout(()=>URL.revokeObjectURL(url),2000);
-      out.textContent='Si el archivo no se descargÃ³, es por el visor del prototipo. En la web real, la imagen queda en tu galerÃ­a.';
-    }catch(e){ out.textContent='En la web real, este botÃ³n guarda la imagen del QR en tu galerÃ­a.'; }
+      out.textContent='Si el archivo no se descargó, es por el visor del prototipo. En la web real, la imagen queda en tu galería.';
+    }catch(e){ out.textContent='En la web real, este botón guarda la imagen del QR en tu galería.'; }
   }
 
-  /* ---------- ConfirmaciÃ³n ---------- */
+  /* ---------- Confirmación ---------- */
   function renderEnviado(){
     const o=lastOrder;
     const code=o?o.code:'BR-2310-K7Q';
     $('#enviado-root').innerHTML=`
       <header class="done-h"><h1>Pedido enviado</h1><p class="code">${code}</p>
-        <p style="font-size:18px;color:var(--ink-2);max-width:54ch">${o?`Recibimos ${o.n} ${o.n===1?'prenda':'prendas'} por ${BS(o.total)}. GuardÃ¡ este cÃ³digo: es el que vas a nombrar si nos escribÃ­s.`:'Vista de ejemplo: asÃ­ se ve la confirmaciÃ³n despuÃ©s de enviar un pedido.'}</p></header>
+        <p style="font-size:18px;color:var(--ink-2);max-width:54ch">${o?`Recibimos ${o.n} ${o.n===1?'prenda':'prendas'} por ${BS(o.total)}. Guardá este código: es el que vas a nombrar si nos escribís.`:'Vista de ejemplo: así se ve la confirmación después de enviar un pedido.'}</p></header>
       <ol class="next">
-        <li><b>Revisamos tu comprobante</b><span>Lo comparamos con el total y el cÃ³digo del pedido.</span></li>
-        <li><b>Te confirmamos la fecha</b><span>Por WhatsApp, con el dÃ­a en que va a estar listo.</span></li>
-        <li><b>Te avisamos cuando estÃ© listo</b><span>Para que lo recojas o salga el delivery.</span></li>
+        <li><b>Revisamos tu comprobante</b><span>Lo comparamos con el total y el código del pedido.</span></li>
+        <li><b>Te confirmamos la fecha</b><span>Por WhatsApp, con el día en que va a estar listo.</span></li>
+        <li><b>Te avisamos cuando esté listo</b><span>Para que lo recojas o salga el delivery.</span></li>
       </ol>
       <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn btn-line" type="button" id="reopen-wa">${ico('chat')}Volver a abrir WhatsApp</button><button class="btn btn-ink" type="button" data-go="personaliza">Armar otro pedido</button></div>
       ${o?`<details class="sent"><summary>Ver el mensaje enviado</summary><pre class="preview">${esc(o.msg)}</pre></details>`:'<div style="height:80px"></div>'}`;
   }
   document.addEventListener('click',e=>{ if(e.target.closest('#reopen-wa')) toast('En la web real, esto vuelve a abrir el chat con el mensaje.'); });
 
-  /* ---------- GuÃ­a de tallas: pestaÃ±as ---------- */
+  /* ---------- Guía de tallas: pestañas ---------- */
   $$('[data-tp]').forEach(b=>b.addEventListener('click',()=>{
     $$('[data-tp]').forEach(x=>{ const on=x===b; x.setAttribute('aria-selected',String(on)); $('#tp-'+x.dataset.tp).hidden=!on; });
   }));
@@ -2663,7 +2663,7 @@ td:first-child{font-weight:600}
     e.preventDefault();
     const n=$('#c-nombre').value.trim(), m=$('#c-msg').value.trim(), c=$('#c-cant').value.trim();
     const show=(id,msg)=>{ const el=$('#'+id+'-err'); el.hidden=!msg; el.textContent=msg||''; msg?$('#'+id).setAttribute('aria-invalid','true'):$('#'+id).removeAttribute('aria-invalid'); };
-    show('c-nombre',n?'':'EscribÃ­ tu nombre.'); show('c-msg',m?'':'Contanos quÃ© necesitÃ¡s.');
+    show('c-nombre',n?'':'Escribí tu nombre.'); show('c-msg',m?'':'Contanos qué necesitás.');
     if(!n){ $('#c-nombre').focus(); return; } if(!m){ $('#c-msg').focus(); return; }
     $('#c-msg-out').textContent=`Hola BRAVA, soy ${n}. Quiero cotizar un pedido especial:\n${m}${c?`\nCantidad aproximada: ${c}`:''}`;
     $('#c-out').hidden=false;
@@ -2673,8 +2673,8 @@ td:first-child{font-weight:600}
   document.addEventListener('click',e=>{
     if(!e.target.closest('[data-demo]')) return;
     cart=[{prenda:'canguro',color:'pacay',talla:'M',dep:'cochabamba',ub:'espalda',tintas:2,acc:'ocre',qty:1},
-          {prenda:'gorra',color:'negro',talla:'Ãšnica',dep:'tarija',ub:'frente',tintas:1,acc:'ocre',qty:1}];
-    P={step:3,nombre:'Daniela Quiroga',cel:'70012345',entrega:'delivery',zona:'Queru Queru',ref:'Calle PantaleÃ³n Dalence, portÃ³n verde',pagado:false,code:null};
+          {prenda:'gorra',color:'negro',talla:'Única',dep:'tarija',ub:'frente',tintas:1,acc:'ocre',qty:1}];
+    P={step:3,nombre:'Daniela Quiroga',cel:'70012345',entrega:'delivery',zona:'Queru Queru',ref:'Calle Pantaleón Dalence, portón verde',pagado:false,code:null};
     persist(); renderCart(); go('pedido');
   });
 
