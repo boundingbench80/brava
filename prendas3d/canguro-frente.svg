@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440">
+<defs>
+ <linearGradient id="cf-body" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#000" stop-opacity=".32"/><stop offset=".18" stop-color="#fff" stop-opacity=".16"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset=".82" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#000" stop-opacity=".34"/></linearGradient>
+ <linearGradient id="cf-sleeve" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#000" stop-opacity=".34"/><stop offset=".48" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#000" stop-opacity=".42"/></linearGradient>
+ <linearGradient id="cf-hood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".17"/><stop offset=".65" stop-color="#000" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+ <linearGradient id="cf-pocket" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#000" stop-opacity=".28"/><stop offset=".18" stop-color="#fff" stop-opacity=".12"/><stop offset=".8" stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient>
+ <linearGradient id="cf-rib" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#000" stop-opacity=".4"/><stop offset=".24" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#000" stop-opacity=".08"/><stop offset=".78" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></linearGradient>
+ <clipPath id="cf-clip"><path d="M140 67 101 78 51 107Q29 120 26 158L12 378 55 386 70 190 77 409Q128 425 200 425t123-16l7-219 15 196 43-8-14-220q-3-38-25-51l-50-29-39-11z"/></clipPath>
+</defs>
+<!-- hood exterior and deep opening -->
+<path fill="var(--garment, #8a8a8a)" d="M139 77Q120 25 160 12q40-13 80 0t21 65q-7 30-39 40l-44-1q-32-10-39-39Z" stroke="#000" stroke-opacity=".28" stroke-width="1.5"/>
+<path fill="url(#cf-hood)" d="M139 77Q120 25 160 12q40-13 80 0t21 65q-7 30-39 40l-44-1q-32-10-39-39Z"/>
+<path fill="#000" fill-opacity=".48" d="M155 71q3-35 45-39 42 4 45 39-17 28-45 33-28-5-45-33Z"/>
+<path fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="2" d="M143 65q1-38 39-45m69 8q12 12 8 35"/>
+<!-- body -->
+<path fill="var(--garment, #8a8a8a)" d="M140 67 101 78 51 107Q29 120 26 158L12 378 55 386 70 190 77 409Q128 425 200 425t123-16l7-219 15 196 43-8-14-220q-3-38-25-51l-50-29-39-11q-14 28-50 28t-50-28Z" stroke="#000" stroke-opacity=".28" stroke-width="1.6" stroke-linejoin="round"/>
+<g clip-path="url(#cf-clip)">
+ <path fill="url(#cf-body)" d="M55 70h290v360H55z"/><path fill="url(#cf-sleeve)" d="M0 95h95v320H0zm305 0h95v320h-95z"/>
+ <path fill="#000" fill-opacity=".26" d="M99 79q-8 55-24 108l24-16 21-87zm202 0q8 55 24 108l-24-16-21-87z"/>
+ <path fill="#fff" fill-opacity=".12" d="M112 82q-4 42-30 89l20-6q26-41 28-77zm176 0q4 42 30 89l-20-6q-26-41-28-77z"/>
+ <path fill="#000" fill-opacity=".26" d="M120 286q19 12 35 3l-19 14-16 100-8-1zm160 0q-19 12-35 3l19 14 16 100 8-1z"/>
+ <path fill="#fff" fill-opacity=".1" d="M164 111q-10 76 0 153l-9 52 8 49q-4 30 0 50l12-1q-7-43 0-93-9-68 0-147z"/>
+</g>
+<!-- pouch pocket, quiet central print zone above -->
+<path fill="var(--garment, #8a8a8a)" d="M126 300q74 16 148 0l18 79q-19 11-38 10l-15-35q-39 14-78 0l-15 35q-20 1-38-10z" stroke="#000" stroke-opacity=".25" stroke-width="1.3"/>
+<path fill="url(#cf-pocket)" d="M126 300q74 16 148 0l18 79q-19 11-38 10l-15-35q-39 14-78 0l-15 35q-20 1-38-10z"/>
+<path fill="none" stroke="#000" stroke-opacity=".3" stroke-width="1.2" d="M126 303q74 16 148 0M160 354q40 13 80 0"/><path fill="none" stroke="#fff" stroke-opacity=".15" d="M129 301q71 15 142 0"/>
+<!-- rib cuffs and hem -->
+<path fill="var(--garment, #8a8a8a)" d="m13 357 44 8-3 21-42-8zm330 8 44-8 1 21-42 8zM78 397q122 25 244 0l-1 19q-121 26-242 0z" stroke="#000" stroke-opacity=".3" stroke-width="1.2"/>
+<path fill="url(#cf-rib)" d="m13 357 44 8-3 21-42-8zm330 8 44-8 1 21-42 8zM78 397q122 25 244 0l-1 19q-121 26-242 0z"/>
+<path fill="none" stroke="#000" stroke-opacity=".17" stroke-width="1" d="M17 364l39 7m-40 4 39 7m290-11 39-7m-38 15 39-7M87 403q113 22 226 0m-225 6q112 23 224 0"/>
+<!-- cords and seams -->
+<path fill="none" stroke="#000" stroke-opacity=".3" stroke-width="5" stroke-linecap="round" d="m185 98-5 76m34-76 5 76"/><path fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="1.5" stroke-linecap="round" d="m184 99-4 70m33-70 4 70"/>
+<path fill="none" stroke="#000" stroke-opacity=".3" stroke-width="1.2" d="M101 80q-5 56-31 110m229-110q5 56 31 110M74 188l-17 174m269-174 17 174"/><path fill="none" stroke="#fff" stroke-opacity=".15" stroke-width="1" d="M104 81q-5 55-31 108m224-108q5 55 31 108"/>
+</svg>

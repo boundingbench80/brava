@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+<g class="s1"><path d="M15 18q10 8 20 0m145 0q-10 8-20 0M19 102h162"/></g>
+<g transform="translate(81 4)"><path class="i1" d="M19 30q16-17 32-3 10 10 2 23-8 13-22 9-19-7-12-29z"/><path class="i2" d="M43 34q20-17 34-6-8 19-34 23l-9-8z"/><path class="g" d="M46 38q14-8 23-7-8 8-21 10z"/><circle class="g" cx="37" cy="34" r="2.5"/><path class="s1" d="M23 57l-3 16m15-14 4 16m-24-36-10-8m28-3q10-5 17 2m-5 38q11-1 17-7"/><path class="sg" d="M20 45l10 4m-6 4 9 3m11-14 5-1"/><path class="i1" d="M8 78q23-11 46 0l-5 8H13z"/><path class="s1" d="M17 80v4m12-5v5m12-5v5"/></g>
+<text class="pt i1" x="100" y="108" text-anchor="middle" font-size="27" textLength="174" lengthAdjust="spacingAndGlyphs">BENI</text><path class="i2" d="M25 87l3 7 7 3-7 3-3 7-3-7-7-3 7-3zm150 0 3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+</svg>

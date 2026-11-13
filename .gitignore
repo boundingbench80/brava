@@ -1,0 +1,8 @@
+prendas3d/respaldo/
+disenos/_pruebas/
+prendas3d/fotos/raw-*
+*.log
+_t.html
+__pycache__/
+disenos/arte/originales/*.png
+/BRAVA-corregido.zip

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#F1E9DA"><title>BRAVA CRM · Simulación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/crm.css">
+</head>
+<body>
+  <div class="simulation-label" id="modeLabel">Datos simulados · precios de ejemplo</div><div id="authGate" hidden></div>
+  <div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="#pipeline"><span>BRAVA CRM</span><small>TALLER · COCHABAMBA</small></a>
+      <nav aria-label="Secciones"><button class="nav-link active" data-view="pipeline">◫ <span>Pipeline</span></button><button class="nav-link" data-view="clientes">◎ <span>Clientes</span></button><button class="nav-link" data-view="inventario">▦ <span>Inventario</span></button><button class="nav-link" data-view="estadisticas">⌁ <span>Estadísticas</span></button></nav>
+      <div class="sidebar-bottom"><span class="sync-dot"></span> Simulación local<button id="resetButton" class="text-button">Restablecer simulación</button></div>
+    </aside>
+    <main class="main-content"><header class="topbar"><div><div class="eyebrow" id="viewEyebrow">VENTAS · SEGUIMIENTO</div><h1 id="viewTitle">Pipeline</h1></div><div class="today mono">26 OCT 2026 <span>·</span> COCHABAMBA</div></header><div id="view" class="view"></div></main>
+  </div>
+  <nav class="mobile-nav" aria-label="Navegación"><button class="active" data-view="pipeline">◫<small>Pipeline</small></button><button data-view="clientes">◎<small>Clientes</small></button><button data-view="inventario">▦<small>Stock</small></button><button data-view="estadisticas">⌁<small>Datos</small></button></nav>
+  <div id="drawer" class="drawer-backdrop" hidden><aside class="drawer" role="dialog" aria-modal="true" aria-label="Detalle"><button id="closeDrawer" class="close-button" aria-label="Cerrar">×</button><div id="drawerContent"></div></aside></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="../brava-config.js?v=20261028"></script><script src="js/analitica.js?v=20261028"></script><script src="js/datos.js?v=20261028"></script>
+</body></html>

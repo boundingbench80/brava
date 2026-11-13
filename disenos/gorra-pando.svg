@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+<g class="s1"><path d="M15 18q10 8 20 0m145 0q-10 8-20 0M19 102h162"/></g>
+<g transform="translate(83 2)"><path class="i1" d="M29 21Q7 7 5 22 3 39 28 43 4 49 11 64q10 9 21-10 10 20 21 9 6-15-18-21 24-6 17-22-9-8-23 10z"/><path class="i2" d="M28 25Q13 15 11 24q-1 10 17 18Q10 47 17 59q6 5 13-10 8 16 14 8 4-10-14-17 18-5 13-14-6-4-15 9z"/><path class="s1" d="M29 22v41m-2-30q-8-11-14-12m17 12q7-12 14-10m-17 26q-7 10-12 10m15-10q7 10 12 9"/><path class="sg" d="M15 25l11 8m18-8-12 8m-16 25 11-7m14 7-10-7"/><circle class="g" cx="24" cy="40" r="2"/><circle class="g" cx="36" cy="40" r="2"/></g>
+<text class="pt i1" x="100" y="108" text-anchor="middle" font-size="27" textLength="174" lengthAdjust="spacingAndGlyphs">PANDO</text><path class="i2" d="M25 87l3 7 7 3-7 3-3 7-3-7-7-3 7-3zm150 0 3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+</svg>

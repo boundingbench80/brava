@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<!-- BRAVA · Cochabamba · Paraba frente roja (Ara rubrogenys)
+     Grabado a 3 tintas. i1 = tinta de contraste (clara sobre prenda oscura), i2 = rojo, i3 = azul.
+     g/lg = calado al color de la prenda. Sin degradados ni transparencias: listo para separar en pantallas. -->
+<style>
+.i1{fill:#F1E9DA}.i2{fill:#C8344A}.i3{fill:#3B6E8F}.g{fill:#264A3B}
+.l1{fill:none;stroke:#F1E9DA;stroke-linecap:round;stroke-linejoin:round}
+.l2{fill:none;stroke:#C8344A;stroke-linecap:round;stroke-linejoin:round}
+.l3{fill:none;stroke:#3B6E8F;stroke-linecap:round;stroke-linejoin:round}
+.lg{fill:none;stroke:#264A3B;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<rect id="preview-bg" class="g" width="400" height="400"/>
+<g id="arte">
+  <!-- Fondo: sol y serranía del valle -->
+  <circle class="i2" cx="318" cy="92" r="46"/>
+  <path class="lg" stroke-width="3" d="M276,84 H360 M280,98 H356 M286,112 H350 M296,126 H340"/>
+  <path class="l1" stroke-width="2" d="M150,214 L188,186 L212,198 L246,170 L276,188 L304,166 L340,190 L372,174 L400,188"/>
+  <path class="l1" stroke-width="1.6" d="M196,214 L226,196 L250,206 L280,190 M318,198 L344,188 L372,200"/>
+
+  <!-- Cactus columnar de los valles secos -->
+  <path class="i3" d="M68,338 V146 C68,128 98,128 98,146 V338 Z"/>
+  <path class="i3" d="M68,236 H48 C38,236 32,228 32,218 V168 C32,156 52,156 52,168 V216 H68 Z"/>
+  <path class="i3" d="M98,266 H118 V198 C118,186 138,186 138,198 V270 C138,282 130,288 120,288 H98 Z"/>
+  <path class="lg" stroke-width="2.2" d="M76,148 V336 M83,140 V336 M90,148 V336 M40,170 V222 M46,166 V226 M126,196 V280 M132,200 V276"/>
+  <path class="l1" stroke-width="1.6" d="M66,160 l-6,-4 M66,190 l-6,-4 M66,220 l-6,-4 M100,170 l6,-4 M100,200 l6,-4 M100,236 l6,-4 M30,180 l-6,-3 M30,204 l-6,-3 M140,212 l6,-3 M140,240 l6,-3"/>
+  <path class="i2" d="M83,132 C76,122 78,112 83,108 C88,112 90,122 83,132 Z M42,158 C37,151 38,145 42,142 C46,145 47,151 42,158 Z"/>
+
+  <!-- Cola: dos plumas largas, azul y clara, con raquis y barbas -->
+  <path class="i1" d="M196,286 C170,316 128,352 82,390 L98,396 C140,362 182,326 214,296 Z"/>
+  <path class="i3" d="M208,290 C188,322 152,360 116,396 L134,398 C168,364 200,330 226,300 Z"/>
+  <path class="lg" stroke-width="1.6" d="M204,292 C176,322 136,358 92,392"/>
+  <path class="l1" stroke-width="1.6" d="M216,296 C192,326 158,362 126,396"/>
+  <path class="lg" stroke-width="1.4" d="M184,308 l10,4 M170,322 l10,4 M156,336 l10,4 M142,350 l10,4 M128,363 l10,4 M114,375 l9,4"/>
+  <path class="l1" stroke-width="1.4" d="M202,316 l9,3 M190,330 l9,3 M178,344 l9,3 M166,358 l9,3 M154,371 l9,3 M142,383 l8,3"/>
+
+  <!-- Rama con corteza -->
+  <path class="i1" d="M34,322 C120,304 236,292 396,262 L398,282 C250,308 134,320 36,340 Z"/>
+  <path class="lg" stroke-width="2" d="M60,326 C110,318 150,314 190,309 M220,304 C280,296 330,286 380,276 M120,328 C150,324 170,322 196,319 M260,302 C300,296 340,290 372,284"/>
+  <path class="lg" stroke-width="1.6" d="M88,324 l6,10 M138,318 l5,10 M300,290 l5,10 M346,282 l4,9"/>
+  <ellipse class="g" cx="330" cy="284" rx="8" ry="4"/>
+
+  <!-- Cuerpo -->
+  <path class="i1" d="M232,124 C208,132 190,156 184,188 C178,222 184,258 198,284 C208,302 226,310 244,302 C264,292 274,264 272,232 C270,202 264,174 258,148 Z"/>
+  <!-- Pecho: plumas en escamas y trama de volumen -->
+  <path class="lg" stroke-width="1.8" d="M238,150 q5,6 10,0 q5,6 10,0 M234,162 q5,6 10,0 q5,6 10,0 q5,6 10,0 M236,176 q5,6 10,0 q5,6 10,0 q5,6 10,0 M240,190 q5,6 10,0 q5,6 10,0 q4,5 8,0"/>
+  <path class="lg" stroke-width="1.6" d="M266,204 C270,224 270,246 262,268 M258,212 C262,232 262,252 254,274 M250,222 C254,240 254,258 246,280 M264,186 C267,194 268,200 268,208"/>
+  <path class="lg" stroke-width="1.3" d="M244,232 l8,-2 M246,244 l8,-2 M244,256 l8,-2 M240,268 l8,-2"/>
+
+  <!-- Ala plegada -->
+  <path class="i1" d="M220,148 C198,168 190,210 194,250 C198,282 204,308 214,334 C226,308 238,270 244,236 C248,204 242,174 230,154 Z"/>
+  <path class="lg" stroke-width="2.4" d="M220,148 C198,168 190,210 194,250 C198,282 204,308 214,334 C226,308 238,270 244,236 C248,204 242,174 230,154"/>
+  <!-- Hombro rojo -->
+  <path class="i2" d="M222,154 C208,170 202,188 204,206 C216,202 230,192 240,178 C238,166 232,158 222,154 Z"/>
+  <path class="lg" stroke-width="1.5" d="M210,182 q4,5 8,0 q4,5 8,0 M214,194 q4,5 8,0 q4,5 8,0"/>
+  <!-- Coberteras en filas -->
+  <path class="lg" stroke-width="1.8" d="M200,214 q6,7 12,0 q6,7 12,0 q5,6 10,0 M198,228 q6,7 12,0 q6,7 12,0 q5,6 10,0 M198,242 q6,7 12,0 q6,7 12,0 q5,6 10,0"/>
+  <!-- Primarias azules -->
+  <path class="i3" d="M200,254 C200,284 206,310 214,334 C222,310 232,282 240,252 C228,260 212,260 200,254 Z"/>
+  <path class="lg" stroke-width="1.8" d="M208,262 L212,322 M216,264 L216,320 M224,262 L220,312 M232,258 L225,300"/>
+
+  <!-- Cabeza -->
+  <circle class="i1" cx="250" cy="104" r="46"/>
+  <path class="lg" stroke-width="1.6" d="M216,118 l6,5 M212,104 l7,3 M214,90 l7,2 M222,132 l6,4 M232,142 l5,5"/>
+  <!-- Frente roja y mancha auricular -->
+  <path class="i2" d="M208,96 C212,68 236,52 262,56 C278,58 288,66 292,78 C272,72 252,76 238,86 C228,92 216,100 208,104 Z"/>
+  <path class="lg" stroke-width="1.5" d="M222,80 l6,6 M234,70 l6,6 M248,64 l5,7 M262,62 l4,7 M276,64 l3,7"/>
+  <path class="i2" d="M224,112 C226,100 238,96 248,102 C252,112 248,124 238,128 C228,128 222,122 224,112 Z"/>
+  <path class="lg" stroke-width="1.3" d="M230,108 l5,4 M236,104 l5,5 M232,118 l5,3"/>
+  <!-- Piel desnuda del rostro con sus líneas finas -->
+  <path class="g" d="M252,84 C266,80 282,86 286,98 C288,110 282,120 270,122 C260,120 252,110 250,98 Z"/>
+  <path class="i1" d="M256,88 C266,85 278,90 281,99 C283,108 278,115 270,116 C262,114 256,106 255,98 Z"/>
+  <path class="lg" stroke-width="1" d="M258,96 C262,94 266,94 270,96 M259,104 C264,102 270,102 276,104 M262,111 C266,110 270,110 274,111"/>
+  <!-- Ojo con anillo -->
+  <circle class="i2" cx="266" cy="97" r="9"/>
+  <circle class="g" cx="266" cy="97" r="6"/>
+  <circle class="i1" cx="268" cy="95" r="1.8"/>
+
+  <!-- Pico curvo (calado) con su contorno -->
+  <path class="g" d="M284,82 C314,78 336,100 336,128 C336,148 326,162 314,168 C318,152 316,140 306,134 C298,130 290,132 286,126 Z"/>
+  <path class="g" d="M288,128 C300,130 312,142 310,160 C302,168 288,166 282,154 C280,142 282,134 288,128 Z"/>
+  <path class="l1" stroke-width="2.4" d="M284,82 C314,78 336,100 336,128 C336,148 326,162 314,168 C318,152 316,140 306,134 C298,130 290,132 286,126"/>
+  <path class="l1" stroke-width="2.2" d="M288,128 C300,130 312,142 310,160 C302,168 288,166 282,154"/>
+  <path class="l1" stroke-width="1.6" d="M292,90 C312,92 324,106 328,126 M298,100 C310,104 318,114 320,126"/>
+  <circle class="i1" cx="291" cy="88" r="2"/>
+
+  <!-- Patas zigodáctilas sobre la rama -->
+  <path class="i1" d="M232,296 C226,304 228,314 238,316 L246,304 Z M250,298 C252,308 260,314 270,310 L264,298 Z"/>
+  <path class="g" d="M236,300 l4,8 M256,302 l6,5"/>
+  <path class="lg" stroke-width="1.4" d="M234,306 l6,-2 M254,306 l6,-1"/>
+</g>
+</svg>
